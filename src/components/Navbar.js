@@ -5,12 +5,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const NavbarHeader = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" >
+        <Navbar collapseOnSelect expand="lg" bg="transparent" variant="dark">
             <Container>
-                <Navbar.Brand href="#home">G.A.R.S</Navbar.Brand>
+                <Navbar.Brand href="#home" style={{
+                    fontSize: '35px'
+                }}>GARS</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="me-auto">
+                    <Nav className="me-auto"  style={{
+                    fontSize: '35px'
+                }}>
                         <Nav.Link href="#features">Who am I?</Nav.Link>
                         <Nav.Link href="#pricing">My Background</Nav.Link>
                         <NavDropdown title="My Projects" id="collasible-nav-dropdown">
@@ -21,7 +25,9 @@ export const NavbarHeader = () => {
                             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
-                    <Nav>
+                    <Nav style={{
+                    fontSize: '35px'
+                }}>
                         <Nav.Link href="#deets">Contact me</Nav.Link>
                         <Nav.Link eventKey={2} href="#memes">
                             Login
