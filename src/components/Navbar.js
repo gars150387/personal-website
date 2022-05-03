@@ -17,7 +17,7 @@ export const NavbarHeader = () => {
                 }}>
                         <Nav.Link href="#features">Who am I?</Nav.Link>
                         <Nav.Link href="#pricing">My Background</Nav.Link>
-                        <NavDropdown title="My Projects" id="collasible-nav-dropdown">
+                        <NavDropdown bg="transparent" title="My Projects" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
@@ -28,7 +28,7 @@ export const NavbarHeader = () => {
                     <Nav style={{
                     fontSize: '35px'
                 }}>
-                        <Nav.Link href="#deets">Contact me</Nav.Link>
+                        <Nav.Link href="#deets">Contact</Nav.Link>
                         <Nav.Link eventKey={2} href="#memes">
                             Login
                         </Nav.Link>
