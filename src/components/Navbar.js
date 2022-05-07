@@ -7,7 +7,7 @@ export const NavbarHeader = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="transparent" variant="dark">
             <Container>
-                <Navbar.Brand href="#home" style={{
+                <Navbar.Brand href="/" style={{
                     fontSize: '35px'
                 }}>GARS</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -15,8 +15,8 @@ export const NavbarHeader = () => {
                     <Nav className="me-auto"  style={{
                     fontSize: '35px'
                 }}>
-                        <Nav.Link href="#features">Who am I?</Nav.Link>
-                        <Nav.Link href="#pricing">My Background</Nav.Link>
+                        <Nav.Link href="/whoami">Who am I?</Nav.Link>
+                        <Nav.Link href="mybackground">My Background</Nav.Link>
                         <NavDropdown bg="transparent" title="My Projects" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -28,7 +28,7 @@ export const NavbarHeader = () => {
                     <Nav style={{
                     fontSize: '35px'
                 }}>
-                        <Nav.Link href="#deets">Contact</Nav.Link>
+                        <Nav.Link href="/contact">Contact</Nav.Link>
                         <Nav.Link eventKey={2} href="/auth/login">
                             Login
                         </Nav.Link>
