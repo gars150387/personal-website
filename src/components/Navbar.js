@@ -29,7 +29,7 @@ export const NavbarHeader = () => {
                     fontSize: '35px'
                 }}>
                         <Nav.Link href="#deets">Contact</Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
+                        <Nav.Link eventKey={2} href="/auth/login">
                             Login
                         </Nav.Link>
                     </Nav>
