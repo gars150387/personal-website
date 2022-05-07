@@ -1,5 +1,6 @@
 import React from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 export const ContactMe = () => {
     // const form = useRef();
@@ -9,9 +10,9 @@ export const ContactMe = () => {
 
         emailjs.sendForm('service_tqq2iw2', 'template_l0cnn0y', e.target, 'user_7hiY7EgOGmmB04VGtCfcX')
             .then((result) => {
-                console.log(result.text);
+                Swal.fire('Messsage Sent!', 'Thnk you for your message', 'success')
             }, (error) => {
-                console.log(error.text);
+                Swal.fire(' Oops...', 'Something went wrong', 'error')
             });
             e.target.reset()
     };
