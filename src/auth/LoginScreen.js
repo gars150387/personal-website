@@ -1,26 +1,44 @@
 import React from 'react'
-import { Container, Row, Stack, Col, Button, ButtonGroup, Card, Form, Nav } from 'react-bootstrap'
+import { Row, Stack, Col, Button, ButtonGroup, Card, Form, Nav, Container } from 'react-bootstrap'
 import { FaFacebook, FaGithub, FaTwitter } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
-
+import { useDispatch } from 'react-redux'
+import {  login, startLoginEmailPassword } from '../actions/auth'
+import { useForm } from '../hooks/useForm'
 
 
 export const LoginScreen = () => {
+
+  const dispatch = useDispatch()
+
+  const [formValues, handleInputChange] = useForm({
+    email: 'gar.santeliz@gmail.com',
+    password: '123456'
+  })
+
+  const { email, password } = formValues
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    dispatch( login( 13154, 'Cesar') )
+  }
+
+
   return (
-    <Container variant="dark">
+    <Container>
       <Row>
         <Stack>
           <ButtonGroup className='mt-2'>
-          <Nav.Link href='/auth/register'>
-                <Button variant='light' className='m-4'>Register</Button>
-              </Nav.Link>
-              <Nav.Link href='/auth/login'>
-                <Button variant='light' className='m-4'>Login</Button>
-              </Nav.Link>
+            <Nav.Link href='/auth/register'>
+              <Button variant='light' className='m-4'>Register</Button>
+            </Nav.Link>
+            <Nav.Link href='/auth/login'>
+              <Button variant='light' className='m-4'>Login</Button>
+            </Nav.Link>
           </ButtonGroup>
         </Stack>
       </Row>
-      <Row>
+      <Form onSubmit={handleLogin}>
         <Col>
           <Card.Title>Sign in with:</Card.Title>
           <br />
@@ -31,39 +49,44 @@ export const LoginScreen = () => {
           <br />
           <Card.Title>or</Card.Title>
         </Col>
-        <Row>
-          <Col>
-            <Card.Title>Email Address</Card.Title>
-            <input placeholder='email address' />
+        <Form.Group onSubmit={handleLogin} className="mb-3" controlId="formBasicEmail">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control
+            ame='email'
+            autoComplete='off'
+            value={email}
+            onChange={handleInputChange}
+            type="email"
+            placeholder="Enter email" />
 
-            <Card.Title>Password:</Card.Title>
-            <input placeholder='password' />
-          </Col>
-          <Row>
-            <Col>
-              <Form>
-                  <div className="mb-3">
-                    <Form.Check
-                      type='checkbox'
-                      id='checkbox'
-                      label='Remember me'
-                    />
-                  </div>
-              </Form>
+          <Form.Text className="text-muted">
+            We'll never share your email with anyone else.
+          </Form.Text>
+        </Form.Group>
 
-              <Nav.Link href="">Forget Password?</Nav.Link>
+        <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Form.Label>Password</Form.Label>
+          <Form.Control
+            name='password'
+            value={password}
+            onChange={handleInputChange}
+            type="password"
+            placeholder="Password" />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+          <Stack direction='horizontal' gap={3}>
+            <Nav.Link href="">Forget Password?</Nav.Link>
+            <Card.Title>Not a member? </Card.Title>
+            <Nav.Link href="">Register</Nav.Link>
+          </Stack>
 
-            </Col>
-          </Row>
-        </Row>
-        <Button>SIGN IN</Button>
-      </Row>
+        </Form.Group>
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>        
+      </Form>
       <Row>
-      <Card.Title>Not a member? 
-      </Card.Title>
-      <Nav.Link href="">Register</Nav.Link>
       </Row>
     </Container>
   )
 }
-
