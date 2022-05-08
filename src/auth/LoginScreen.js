@@ -3,8 +3,10 @@ import { Row, Stack, Col, Button, ButtonGroup, Card, Form, Nav, Container } from
 import { FaFacebook, FaGithub, FaTwitter } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
 import { useDispatch } from 'react-redux'
-import {  login, startLoginEmailPassword } from '../actions/auth'
+import { login, startGoogleLogin } from '../actions/auth'
 import { useForm } from '../hooks/useForm'
+
+import '../styles/login.css'
 
 
 export const LoginScreen = () => {
@@ -20,9 +22,13 @@ export const LoginScreen = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    dispatch( login( 13154, 'Cesar') )
+    dispatch( login() )
   }
 
+
+  const handleGoogleLogin = () =>{
+    dispatch( startGoogleLogin() )
+  }
 
   return (
     <Container>
@@ -43,7 +49,9 @@ export const LoginScreen = () => {
           <Card.Title>Sign in with:</Card.Title>
           <br />
           <FaFacebook className='icon' />
-          <SiGmail className='icon' />
+          <SiGmail
+          onClick={ handleGoogleLogin }
+          className='icon' />
           <FaGithub className='icon' />
           <FaTwitter className='icon' />
           <br />
