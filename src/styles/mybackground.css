@@ -1,5 +1,6 @@
 .myBackground-body{
     height: 100vh;
     width: 100vw;
-    background-color: #e7a9ea;
+    /* background-image: url('https://i.pinimg.com/originals/4c/14/ac/4c14ac4ecfb98c7b5c30fcf9d5a26892.jpg'); */
+    background-size: cover;
 }
