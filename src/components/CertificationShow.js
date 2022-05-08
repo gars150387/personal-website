@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card, Stack, Col } from 'react-bootstrap';
+import { Button, Card, Stack } from 'react-bootstrap';
 import { CertificationsData } from './CertificationsData';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
