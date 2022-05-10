@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 import { Row, Stack, Col, Button, ButtonGroup, Card, Form, Nav, Container } from 'react-bootstrap'
 import { FaFacebook, FaGithub, FaTwitter } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
@@ -8,10 +9,11 @@ import { useForm } from '../hooks/useForm'
 
 import '../styles/login.css'
 
-
 export const LoginScreen = () => {
 
   const dispatch = useDispatch()
+
+  const navigate = useNavigate()
 
   const [formValues, handleInputChange] = useForm({
     email: 'gar.santeliz@gmail.com',
@@ -23,11 +25,15 @@ export const LoginScreen = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     dispatch( login() )
+    navigate('/')
+
   }
 
 
   const handleGoogleLogin = () =>{
     dispatch( startGoogleLogin() )
+    navigate('/')
+
   }
 
   return (
@@ -60,7 +66,7 @@ export const LoginScreen = () => {
         <Form.Group onSubmit={handleLogin} className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control
-            ame='email'
+            name='email'
             autoComplete='off'
             value={email}
             onChange={handleInputChange}
