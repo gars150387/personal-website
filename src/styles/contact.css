@@ -1,9 +1,10 @@
+
 .box-message{
     height: 40vh;
     width: 100vw;
-    background: currentColor;
+    /* background-color: ; */
     border-radius: 10px;
 }
 .box-message:hover{
-    background-color: aqua;
+    
 }
