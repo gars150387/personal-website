@@ -33,7 +33,8 @@ export const CertificateFormat = (props) => {
                 marginTop: '2%',
                 fontSize: '25px',
                 textDecoration: 'underline',
-                boxShadow: '-2px 3px 5px #212529'
+                boxShadow: '-2px 3px 5px #212529',
+                color: 'white'
             }}>
                 {props.company}
             </Card.Text>
