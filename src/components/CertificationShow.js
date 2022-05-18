@@ -1,10 +1,11 @@
 import React from 'react';
-import { Stack, Col } from 'react-bootstrap';
+import { Stack, Col, Button, Card } from 'react-bootstrap';
 import { CertificationsData } from './CertificationsData';
 import { CertificateFormat } from './CertificateFormat';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 
 
 
@@ -31,6 +32,17 @@ export const CertificationShow = () => {
                             fontFamily: 'calibri'
                         }}
                     />
+                    <div className="vr" />
+                    <Link to='/mybackground/resume'>
+                    <Col><Button style={{
+                            width: '35vw',
+                            display: '-ms-flexbox',
+                            marginLeft: '32%',
+                            marginRight:'50%',
+                            fontSize: '32px',
+                            fontFamily: 'calibri'
+                        }} variant="secondary" bg="secondary">Resume</Button></Col>
+                </Link>
                 </Col>
             </Col>
             <hr />
