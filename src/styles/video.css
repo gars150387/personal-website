@@ -1,8 +1,12 @@
 video{
-    width: 95vw;
-    height: 95vh;
+    width: 35vw;
+    height: 43vh;
     object-fit: cover;
     display: flex;
-    left: 32%;
+    position: relative;
+    top: 35%;
+    left: 15%;
+    border-radius: 10px;
+
 
 }
