@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Navbar, NavDropdown, Nav } from 'react-bootstrap'
+import { Container, Navbar, Nav } from 'react-bootstrap'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -9,9 +9,9 @@ export const NavbarHeader = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="transparent" variant="dark">
             <Container>
-                <Navbar.Brand id='navbarMain-option-0'  href="/">GARS</Navbar.Brand>
+                <Navbar.Brand id='navbarMain-option-0' className='animate__animated animate__bounceInLeft' href="/">GARS</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
+                <Navbar.Collapse id="responsive-navbar-nav" className='animate__animated animate__backInRight'>
                     <Nav className="me-auto"  style={{
                     fontSize: '35px'
                 }}>
