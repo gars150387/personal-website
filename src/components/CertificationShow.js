@@ -33,7 +33,7 @@ export const CertificationShow = () => {
                         }}
                     />
                     <div className="vr" />
-                    <Link to='/mybackground/resume'>
+                    <Link to='/resume'>
                     <Col><Button style={{
                             width: '35vw',
                             display: '-ms-flexbox',
