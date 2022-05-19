@@ -1,0 +1,8 @@
+video{
+    width: 95vw;
+    height: 95vh;
+    object-fit: cover;
+    display: flex;
+    left: 32%;
+
+}
