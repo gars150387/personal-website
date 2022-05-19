@@ -5,7 +5,7 @@ export const CertificationsData = [
 		title: "Full Stack Web Developer",
 		company: "Miami Dade College in partnered with 4Geeks Academy",
 		href: "https://www.mdc.edu/ce/technology/",
-		img: "FullStackWebDeveloperCertificationMiamiDadeCollege.jpg"
+		img: "FullStackWebDeveloperCertificationMiamiDadeCollege.jpg",
 	},
 	{
 		id: "001",
@@ -109,13 +109,4 @@ export const CertificationsData = [
 		href:
 			"https://www.linkedin.com/learning/react-js-essential-training/building-modern-user-interfaces-with-react?autoAdvance=true&autoSkip=false&autoplay=true&resume=true&u=107513458",
 		img: "ReactjsEssentialTraining.jpg",
-	},
-	// {
-	// 	id: "014",
-	// 	title: "React Essential Training",
-	// 	company: "LinkedIn Learning",
-	// 	href:
-	// 		"https://www.linkedin.com/learning/react-js-essential-training/building-modern-user-interfaces-with-react?autoAdvance=true&autoSkip=false&autoplay=true&resume=true&u=107513458",
-	// 	img: "ReactEssentialTraining"
-	// }
-];
+	}];

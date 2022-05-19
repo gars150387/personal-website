@@ -12,6 +12,8 @@ import { LoginScreen } from '../auth/LoginScreen';
 import { WhoAmI } from '../pages/WhoAmI';
 import { MyBackground } from '../pages/MyBackground';
 import { Contact } from '../pages/Contact';
+import { Resume } from '../pages/Resume';
+import { InnerRoute } from './InnerRoute';
 
 
 export const AppRouter = () => {
@@ -20,7 +22,11 @@ export const AppRouter = () => {
             <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route exact path="/whoami" element={<WhoAmI />} />
-                <Route exact path="/mybackground" element={ <MyBackground />} />
+                {/* <Route exact path="/mybackground" element={ <MyBackground />} /> */}
+                <Route exact path='/mybackground' element={<InnerRoute />} >
+                    <Route exact path='resume' element={<Resume />} />
+                    <Route exact path='certificates' element={<MyBackground />}/>
+                </Route>
                 <Route exact path="/contact" element={<Contact />} />
                 <Route exact path="/auth" element={<AuthRouter />}>
                     <Route

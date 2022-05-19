@@ -13,9 +13,10 @@ export const NavbarInner = () => {
         setvalue(e.target.value)
     }
 
-    const handleSubmit = () =>{
-        console.log(value)
-    }
+    // const handleSubmit = () =>{
+        
+    // }
+    
     
     return (
         <>
@@ -26,7 +27,7 @@ export const NavbarInner = () => {
            placeholder="Search here"
             />
 
-            <button onClick={handleSubmit}>Search</button>
+            {/* <button onClick={handleSubmit}>Search</button> */}
         </>
     )
 }

@@ -1,5 +1,23 @@
-#navbarMain-option:hover{
+#navbarMain-option:hover {
     color: black;
-    font-size: 42px;
+    font-size: 39px;
+}
+
+#navbarMain-option {
+    display: flex;
+    position: relative;
+    left: 75%;
+}
+
+#navbarMain-option-0 {
+    font-size: 50px;
+    display: flexbox;
+    position: relative;
+    left: 0%;
+    border-radius: 10px;
+    color: #ffffff8c;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: -3px -3px 1px 5px rgb(145, 142, 142);
+
 
 }

@@ -1,14 +1,15 @@
 import React from 'react'
-import { Provider } from "react-redux";
+import { NavbarHeader } from './components/Navbar'
 
 import { AppRouter } from './routers/AppRouter'
-import { store } from './store/store';
 
 
 export const App = () => {
   return (
-    <Provider store={ store }>
-        <AppRouter />
-    </Provider>
+    <div>
+      {/* <NavbarHeader /> */}
+      <AppRouter />
+
+    </div>
   )
 }

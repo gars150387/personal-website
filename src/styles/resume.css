@@ -1,0 +1,23 @@
+#root > div > div > div > div > div > div > div > div:nth-child(1){
+    box-sizing: border-box;
+    padding: .5rem;
+    height: 100vh;
+    width: 79vw;
+    position: absolute;
+    top: 0px;
+    left: 12%;
+    transform: translateY(0px);
+    background-color: transparent;
+}
+
+#root > div > div > div > div > div > div > div > div:nth-child(2){
+    box-sizing: border-box;
+    padding: .5rem;
+    height: 100vh;
+    width: 79vw;
+    position: absolute;
+    top: 0px;
+    left: 12%;
+    transform: translateY(0px);
+    background-color: transparent;
+}

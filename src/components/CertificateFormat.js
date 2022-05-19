@@ -1,6 +1,8 @@
 import React from 'react'
 import { Card, Button } from 'react-bootstrap'
 
+import '../styles/mybackground.css'
+
 export const CertificateFormat = (props) => {
   return (
     <Card sm="true" key={props.id} style={{
@@ -28,14 +30,7 @@ export const CertificateFormat = (props) => {
             backgroundColor: '#212529'
         }} />
         <Card.Body>
-            <Card.Text className='text-center' style={{
-                width: '32vw',
-                marginTop: '2%',
-                fontSize: '25px',
-                textDecoration: 'underline',
-                boxShadow: '-2px 3px 5px #212529',
-                color: 'white'
-            }}>
+            <Card.Text className='text-center' id='card-body-text'>
                 {props.company}
             </Card.Text>
         </Card.Body>

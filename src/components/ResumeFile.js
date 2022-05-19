@@ -22,7 +22,7 @@ export const ResumeFile = () => {
 
     return (
         <div className="pdf-container">
-            <Col md={{ span: 8, offset: 2 }} className='text-center'>
+            <Col md={{ span: 8, offset: 2 }} className='text-center mt-4'>
                 <Link to="/mybackground/certificates">
                     <Button variant='secondary' style={{
                         width: '50vw',

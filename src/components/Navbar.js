@@ -3,35 +3,29 @@ import { Container, Navbar, NavDropdown, Nav } from 'react-bootstrap'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import '../styles/navbarMain.css'
+
 export const NavbarHeader = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="transparent" variant="dark">
             <Container>
-                <Navbar.Brand href="/" style={{
-                    fontSize: '35px'
-                }}>GARS</Navbar.Brand>
+                <Navbar.Brand id='navbarMain-option-0'  href="/">GARS</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto"  style={{
                     fontSize: '35px'
                 }}>
-                        <Nav.Link href="/whoami">Who am I?</Nav.Link>
-                        <Nav.Link href="mybackground">My Background</Nav.Link>
-                        <NavDropdown bg="transparent" title="My Projects" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                        </NavDropdown>
+                        <Nav.Link id='navbarMain-option' href="/whoami">Who am I?</Nav.Link>
+                        <Nav.Link id='navbarMain-option'  href="mybackground/certificates">My Background</Nav.Link>
+                        <Nav.Link id='navbarMain-option' target="_blank" rel="noopener noreferrer" href='https://www.github.com/gars150387'>My GitHub</Nav.Link>
                     </Nav>
                     <Nav style={{
                     fontSize: '35px'
                 }}>
-                        <Nav.Link href="/contact">Contact</Nav.Link>
-                        <Nav.Link eventKey={2} href="/auth/login">
+                        <Nav.Link id='navbarMain-option'  href="/contact">Contact</Nav.Link>
+                        {/* <Nav.Link id='navbarMain-option'  eventKey={2} href="/auth/login">
                             Login
-                        </Nav.Link>
+                        </Nav.Link> */}
                     </Nav>
                 </Navbar.Collapse>
             </Container>

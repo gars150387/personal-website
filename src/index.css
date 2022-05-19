@@ -2,6 +2,7 @@ body {
   height: 100vh;
   background-image: url('https://sx-content-labs.sixt.io/Media/sf-countries/Bulgaria/Sunny_Beach/city-sunny-beach-header.jpg');
   background-size: cover;
+  background-origin: content-box;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
