@@ -16,7 +16,7 @@ export const NavbarHeader = () => {
                     fontSize: '35px'
                 }}>
                         <Nav.Link id='navbarMain-option' href="/whoami">Who am I?</Nav.Link>
-                        <Nav.Link id='navbarMain-option'  href="mybackground/certificates">My Background</Nav.Link>
+                        <Nav.Link id='navbarMain-option'  href="/mybackground">My Background</Nav.Link>
                         <Nav.Link id='navbarMain-option' target="_blank" rel="noopener noreferrer" href='https://www.github.com/gars150387'>My GitHub</Nav.Link>
                     </Nav>
                     <Nav style={{
