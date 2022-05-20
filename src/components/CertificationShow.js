@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stack, Col, Button, Card } from 'react-bootstrap';
+import { Stack, Col, Button } from 'react-bootstrap';
 import { CertificationsData } from './CertificationsData';
 import { CertificateFormat } from './CertificateFormat';
 

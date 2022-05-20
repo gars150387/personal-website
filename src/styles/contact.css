@@ -1,10 +1,28 @@
 
 .box-message{
-    height: 40vh;
+    height: 60vh;
     width: 100vw;
     /* background-color: ; */
     border-radius: 10px;
 }
 .box-message:hover{
     
+}
+
+#button-socialMedia{
+width: 15vw;
+font-size: 20px;
+}
+
+
+#button-socialMedia:hover{
+    background-color: whitesmoke;
+    border-color: #212529;
+    color: black;
+}
+
+.other-link{
+    text-align: center;
+    display: inline-block;
+    left: 0%
 }

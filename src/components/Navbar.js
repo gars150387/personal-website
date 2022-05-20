@@ -7,7 +7,7 @@ import '../styles/navbarMain.css'
 
 export const NavbarHeader = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="transparent" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg="transparent" variant="dark" fluid>
             <Container>
                 <Navbar.Brand id='navbarMain-option-0' className='animate__animated animate__bounceInLeft' href="/">GARS</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
