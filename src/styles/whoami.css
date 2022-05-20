@@ -30,36 +30,38 @@
     border-bottom-left-radius: 15px;
 }
 
-
-
-
-/* 
-#text1:hover{
-    font-size: 50px;
-    color: white;
-
-}
-
-#text2:hover{
-    font-size: 50px;
-    color: white;
+#imgWhoAmI-Left{
+    width: 20vw;
+    height: 45vh;
+    border-radius: 15px;
+    margin-right: 0px;
+    display: inline-block;
+    position: calc(0, 0);
+    right: 0%;
 
 }
 
-#text3:hover{
-    font-size: 50px;
-    color: white;
+#imgWhoAmI-Right{
+    width: 28vw;
+    height: 45vh;
+    border-radius: 15px;
+    margin-left: 0px;
 
 }
 
-#text4:hover{
-    font-size: 50px;
-    color: white;
-
+.card-body{
+    text-align: center;
 }
 
-#text5:hover{
-    font-size: 50px;
-    color: white;
+.card-body p{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 4px whitesmoke;
+}
 
-} */
+.card-body h1, h5{
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px brown;
+}
