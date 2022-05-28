@@ -1,5 +1,4 @@
 import React from 'react'
-import videoSkating from '../video/skateboaring.mp4'
 import skate from '../video/skateboarding.mp4'
 import { NavbarHeader } from '../components/Navbar'
 import { Stack } from 'react-bootstrap'

@@ -6,9 +6,9 @@ import {
 } from "react-router-dom"
 
 import { Home } from '../pages/Home'
-import { AuthRouter } from './AuthRouter';
-import { RegisterScreen } from '../auth/RegisterScreen';
-import { LoginScreen } from '../auth/LoginScreen';
+// import { AuthRouter } from './AuthRouter';
+// import { RegisterScreen } from '../auth/RegisterScreen';
+// import { LoginScreen } from '../auth/LoginScreen';
 import { WhoAmI } from '../pages/WhoAmI';
 import { MyBackground } from '../pages/MyBackground';
 import { Contact } from '../pages/Contact';
@@ -24,7 +24,7 @@ export const AppRouter = () => {
                 <Route exact path="/mybackground" element={<MyBackground />} />
                 <Route exact path='/resume' element={<Resume />} />
                 <Route exact path="/contact" element={<Contact />} />
-                <Route exact path="/auth" element={<AuthRouter />}>
+                {/* <Route exact path="/auth" element={<AuthRouter />}>
                     <Route
                         exact
                         path='register'
@@ -35,7 +35,7 @@ export const AppRouter = () => {
                         path='login'
                         element={<LoginScreen />}
                     />
-                </Route>
+                </Route> */}
             </Routes>
         </BrowserRouter>
     )
