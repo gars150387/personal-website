@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { NavbarHeader } from '../components/Navbar';
 
-import '../styles/video.css'
 import '../styles/Sass/home.scss'
 import { Link } from 'react-router-dom';
 

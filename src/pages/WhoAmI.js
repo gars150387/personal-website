@@ -1,9 +1,6 @@
 import React from 'react'
-import { Stack, Button } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Stack } from 'react-bootstrap'
 import { NavbarHeader } from '../components/Navbar'
-import slidingdown from '../video/sliding-down.mp4'
-import halfway from '../video/half-way.mp4'
 
 
 
@@ -30,24 +27,10 @@ export const WhoAmI = () => {
                     </div>
                 </div>
             </Stack>
-            {/* <Stack className="justify-content-center" direction='horizontal' gap={1}>
-                <div className="left-img">
-                    <Card.Img id='imgWhoAmI-Left' src={require('../images/carrying-a-skateboard.jpeg')} alt="..." />
-                </div>
-                <div className="right-img">
-                    <Card.Img id='imgWhoAmI-Right' src={require('../images/sanFranciscoTrip.jpg')} alt="..." />
-                </div>
-            </Stack> */}
             <div className='box'>
                     <textarea />
                     <textarea />
                 </div>
-            {/* <Stack classNam="justify-content-center video" direction="horizontal" gap={2}> */}
-                
-
-                {/* <video className='video animate__animated animate__bounceInLeft animate__slow' src={slidingdown} autoPlay loop muted /> */}
-                {/* <video className="video" src={halfway} autoPlay loop muted /> */}
-            {/* </Stack> */}
         </div>
 
     )
