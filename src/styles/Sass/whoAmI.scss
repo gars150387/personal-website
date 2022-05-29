@@ -6,7 +6,6 @@
 .whoami-body{
     height: 100vh;
     width: 100vw;
-    image-resolution: 300dpi snap;
     background-size: cover;
     text-align: justify;
 }
@@ -74,12 +73,15 @@ img img{
     }    
 }
 
-.card-body h1, h5{
+.card-body h5{
     font-size: 35px;
     font-family: 'Exo', sans-serif;
     text-decoration: underline;
     color: #212529;
     text-align: center;
+    display: block;
+    position: relative;
+    top: 20%;
 }
 
 .video{
