@@ -2,7 +2,6 @@ import React from "react";
 import { CertificationShow } from '../components/CertificationShow'
 import { Stack, Col, Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { FaList, FaMicrosoft } from 'react-icons/fa'
 
 import '../styles/Sass/background.scss'
 import { ScrollUp } from "../hooks/useScrollUp";
