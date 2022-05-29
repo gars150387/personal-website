@@ -1,8 +1,8 @@
 #root > div > div > div > div > div > div > div > div:nth-child(1){
     box-sizing: border-box;
     padding: .5rem;
-    height: 100vh;
-    width: 79vw;
+    height: 50vh;
+    width: 50vw;
     position: absolute;
     top: 0px;
     left: 12%;
@@ -13,8 +13,8 @@
 #root > div > div > div > div > div > div > div > div:nth-child(2){
     box-sizing: border-box;
     padding: .5rem;
-    height: 100vh;
-    width: 79vw;
+    height: 50vh;
+    width: 20vw;
     position: absolute;
     top: 0px;
     left: 12%;
