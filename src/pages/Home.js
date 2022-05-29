@@ -18,7 +18,7 @@ export const Home = () => {
       <div>
         <div className='home-box' onClick={() => (setShowNavbar(!showNavbar),
           setShowLetters(false))}>
-          {showLetters === true ? (<span>G.A.R.S</span>) : <div className='navbar-after-click' ><p>G.A.R.S</p></div> }
+          {showLetters === true ? (<span className='animate__animated animate__pulse animate__infinite animate__slower'>G.A.R.S</span>) : <div className='navbar-after-click' ><p>G.A.R.S</p></div> }
       </div>
       {/* <div id='container-render'>
           <BackgroundResume />
