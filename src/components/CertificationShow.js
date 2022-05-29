@@ -2,7 +2,7 @@ import React from 'react';
 import { Stack, Col, Button } from 'react-bootstrap';
 import { CertificationsData } from './CertificationsData';
 import { CertificateFormat } from './CertificateFormat';
-
+import {FaSearch} from 'react-icons/fa'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
@@ -16,20 +16,20 @@ export const CertificationShow = () => {
 
     return (
         <>
-            <Col className='justify-content-center'>
-                <Col>
+            <div className='justify-content-center'>
+                <div>
                     <input className='search-input'
                         name="value"
                         onChange={(e) => setSearchTerm(e.target.value)}
                         value={searchTerm}
                         placeholder="Search my certificate here!"
                     />
-                    <div className="vr" />
+                    
                     <Link to='/resume'>
-                    <Col><Button className='button-certificate-link'>Resume</Button></Col>
+                    <div className='button-container-resume' ><Button className='button-certificate-link'>Resume</Button></div>
                 </Link>
-                </Col>
-            </Col>
+                </div>
+            </div>
             <div className='certificate-container'>
                 {
                     CertificationsData.filter(item =>
