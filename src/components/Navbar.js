@@ -16,7 +16,7 @@ export const NavbarHeader = () => {
                         <Nav className="me-auto" style={{
                             fontSize: '35px'
                         }}> */}
-                            <Nav.Link id='navbarMain-option' href="/"><p>Home</p></Nav.Link>
+                            {/* <Nav.Link id='navbarMain-option' href="/whoami"><p>Home</p></Nav.Link> */}
                             <Nav.Link id='navbarMain-option' href="/whoami"><p>Who Am I?</p></Nav.Link>
                             <Nav.Link id='navbarMain-option' href="/mybackground"><p>My Background</p></Nav.Link>
                             <Nav.Link id='navbarMain-option' target="_blank" rel="noopener noreferrer" href='https://www.github.com/gars150387'><p>My GitHub</p></Nav.Link>

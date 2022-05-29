@@ -2,7 +2,6 @@ import React from 'react';
 import { Stack, Col, Button } from 'react-bootstrap';
 import { CertificationsData } from './CertificationsData';
 import { CertificateFormat } from './CertificateFormat';
-import {FaSearch} from 'react-icons/fa'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
@@ -45,3 +44,7 @@ export const CertificationShow = () => {
         </>
     );
 }
+
+
+//<FaList /> list
+//<FaMicrosoft /> square

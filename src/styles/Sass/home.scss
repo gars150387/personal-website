@@ -64,12 +64,12 @@
 }
 
 #container-render {
-  width: 80vw;
-  height: 900px;
+  width: max-content;
+  height:max-content;
   background-color: #0000;
   position: absolute;
-  top: 90%;
-  left: 10%;
+  top: 35%;
+  left: 27%;
 }
 
 .navbar-after-click {

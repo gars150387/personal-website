@@ -3,6 +3,7 @@ import { NavbarHeader } from '../components/Navbar';
 
 import '../styles/video.css'
 import '../styles/Sass/home.scss'
+import { Link } from 'react-router-dom';
 
 
 export const Home = () => {
@@ -18,11 +19,13 @@ export const Home = () => {
       <div>
         <div className='home-box' onClick={() => (setShowNavbar(!showNavbar),
           setShowLetters(false))}>
-          {showLetters === true ? (<span className='animate__animated animate__pulse animate__infinite animate__slower'>G.A.R.S</span>) : <div className='navbar-after-click' ><p>G.A.R.S</p></div> }
+            <Link to='/whoami'>
+                        {showLetters === true ? (<span id='container-render' className='animate__animated animate__pulse animate__infinite animate__slower'>G.A.R.S</span>) : 
+                        <div className='navbar-after-click' ><p>G.A.R.S</p></div> }
+            </Link>
+
       </div>
-      {/* <div id='container-render'>
-          <BackgroundResume />
-        </div> */}
+
     </div>
 
     </div >
