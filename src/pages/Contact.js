@@ -3,15 +3,22 @@ import { ContactMe } from "../components/ContactForm";
 import { Container, Row, Col, Card, Button, Stack } from "react-bootstrap";
 import { NavbarHeader } from "../components/Navbar";
 
-
 import '../styles/contact.css'
+import { Link } from "react-router-dom";
 
 
 export const Contact = () => {
     return (
         <>
             <Container className="contact-container" fluid>
-                <NavbarHeader />
+                <NavbarHeader className='navbar-contact' />
+                <div>
+                <Link to="/">
+                    <Button className='button-home'  variant='secondary' style={{
+                        width: '50vw',
+                    }}><h1>Home</h1></Button>
+                </Link>
+                </div>
                 <Row className="mt-5">
                     <Col md={{ span: 6, offset: 3 }}>
                         <Row>

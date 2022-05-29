@@ -1,0 +1,29 @@
+.button-home{
+    position: relative;
+    left: 25%;
+    display: block;
+    margin-bottom: 1%;
+    font-size: 29px;
+    font-weight: 500;
+    color: #000;
+    background-image: repeating-linear-gradient(
+        55deg,
+        transparent 0,
+          transparent 2px,
+        #fff 5px
+    );
+    // transition: all 0.4s;
+
+    &:hover{
+        color: #fff;
+        background-image: repeating-linear-gradient(
+        33deg,
+        transparent 0,
+          transparent 2px,
+        #000 5px
+    );
+    transform: skewX(10deg);
+    box-shadow: -1px -2px 5px 3px rgb(179, 143, 143);
+    transition: all 1s;
+    }
+} 

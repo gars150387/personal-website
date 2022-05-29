@@ -46,7 +46,7 @@ export const CertificationShow = () => {
                 </Col>
             </Col>
             <hr />
-            <Stack gap={3}>
+            <div className='certificate-container'>
                 {
                     CertificationsData.filter(item =>
                         item.title.toLowerCase()
@@ -57,7 +57,7 @@ export const CertificationShow = () => {
                             )
                         })
                 }
-            </Stack>
+            </div>
         </>
     );
 }

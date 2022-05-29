@@ -44,7 +44,7 @@ return (
                     <textarea type="text" className='form-control' id='' cols='30' rows="8" placeholder='Your Message' name='message' />
                 </div>
                 <div className='col-8 pt-3 mx-auto mb-4' >
-                    <button disabledButton={disableButton} onClick={sendEmail} type='submit' className='btn btn-info' >Send me your message!</button>
+                    <button disabledButton={disableButton} onClick={sendEmail} type='submit' className='btn btn-success' >Send me your message!</button>
                 </div>
             </div>
         </form>

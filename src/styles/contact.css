@@ -1,8 +1,14 @@
+#contact-container{
+    background: color #ffba08;;
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+}
+
 
 .box-message{
     height: 60vh;
     width: 100vw;
-    /* background-color: ; */
     border-radius: 10px;
 }
 
@@ -24,7 +30,7 @@ font-size: 20px;
     left: 0%
 }
 
-h1{
+h1, h3{
     border-color: whitesmoke;
     text-shadow: -2px 2px 3px white;
 }
