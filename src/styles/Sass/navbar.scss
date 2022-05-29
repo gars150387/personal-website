@@ -1,15 +1,22 @@
-.navbar-container{
-    align-items: center;
+@import '../Sass/main-features/font-family.scss';
+
+.vertical-nav{
+    position: absolute;
+    left: 0%;
+    // border-right: solid #212529 2px;
+    // height: 100vh
 }
 
 #navbarMain-option p {
-    color: rgb(52, 24, 104);
+    color: rgb(0, 0, 0);
     font-weight: 600;
-    font-size: 50px;
-    display: inline-block;
+    font-size: 20px;
+    display: block;
     position: relative;
-    left: 5vw;
+    top:10vh;
     transition: all 0.5s;
+    text-shadow: 0px 0px 9px #ffff;
+    font-family: 'Exo', sans-serif;
 
     &:hover {
         color: #f8f9fa;
@@ -18,38 +25,6 @@
         z-index: 1;
     }
 }
-
-// #navbarMain-option-0 h1{
-//     display: flex;
-//     left: 5%;
-//     font-size: 50px;
-//     color: #ffffff8c;
-//     font-family: 'Times New Roman', Times, serif;
-//     transition: all 0.4s;
-//     letter-spacing: 10px;
-//     margin: 5px auto;
-//     background-image: repeating-linear-gradient(
-//           45deg,
-//           transparent 0,
-//           transparent 2px,
-//           black 5px,
-//           black 4px
-//         );
-//         -webkit-background-clip: text;
-//         background-clip: text;
-
-//     &:hover {
-//         // font-size: 50px;
-//         display: flexbox;
-//         position: relative;
-//         left: 0%;
-//         border-radius: 10px;
-//         color: #f8f9fa;
-//         font-family: 'Times New Roman', Times, serif;
-//         box-shadow: 0px 0px 5px 15px rgb(137, 137, 138);
-//         transform: scale(1.2);
-//     }
-// }
 
 hr{
     color: #f8f9fa;

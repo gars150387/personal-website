@@ -6,6 +6,7 @@ import slidingdown from '../video/sliding-down.mp4'
 import halfway from '../video/half-way.mp4'
 
 
+
 import '../images/sanFranciscoTrip.jpg'
 import '../images/carrying-a-skateboard.jpeg'
 import '../styles/Sass/whoAmI.scss'
@@ -13,14 +14,9 @@ import '../styles/Sass/whoAmI.scss'
 export const WhoAmI = () => {
     return (
         <div classNameName='whoami-body'>
+            <div className='navbar-after-click' ><p>G.A.R.S</p></div>
             <NavbarHeader id='navbar-whoami' />
-            <div>
-            <Link to="/">
-                    <Button className='button-home' variant='secondary' style={{
-                        width: '50vw',
-                    }}><h1>Home</h1></Button>
-                </Link>
-            </div>
+
             <Stack className="justify-content-center" direction='horizontal' gap={2}>
                 <div className="col-md-8">
                     <div className="card-body">

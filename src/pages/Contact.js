@@ -10,15 +10,9 @@ import { Link } from "react-router-dom";
 export const Contact = () => {
     return (
         <>
-            <Container className="contact-container" fluid>
+        <div className='navbar-after-click' ><p>G.A.R.S</p></div>
+            <Container className="contact-container">
                 <NavbarHeader className='navbar-contact' />
-                <div>
-                <Link to="/">
-                    <Button className='button-home'  variant='secondary' style={{
-                        width: '50vw',
-                    }}><h1>Home</h1></Button>
-                </Link>
-                </div>
                 <Row className="mt-5">
                     <Col md={{ span: 6, offset: 3 }}>
                         <Row>
@@ -27,10 +21,7 @@ export const Contact = () => {
                             </Col>
                         </Row>
                         <Row>
-                            <Col style={{
-                                width: '150%',
-                                height: '150%'
-                            }} className="box-message">
+                            <Col className="box-message">
                                 <ContactMe />
                             </Col>
                         </Row>

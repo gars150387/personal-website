@@ -1,5 +1,7 @@
 @import '../Sass/main-features/mainColors.scss';
 @import '../Sass/main-features/button-home.scss';
+@import '../Sass/main-features/font-family.scss';
+
 
 .whoami-body{
     height: 100vh;
@@ -59,22 +61,25 @@ img img{
 }
 
 .card-body{
-    text-align: center;
+    text-align: justify;
+    position: relative;
+    display: block;
+    top: 10vh;
 
     p{
         font-size: 25px;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: 'Exo', sans-serif;
         text-shadow: 2px 2px 30px #ced4da;
-        color: #f8f9fa;
+        color: #212529;
     }    
 }
 
 .card-body h1, h5{
     font-size: 35px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Exo', sans-serif;
     text-decoration: underline;
-    text-shadow: 2px 2px 4px #dee2e6;
     color: #212529;
+    text-align: center;
 }
 
 .video{

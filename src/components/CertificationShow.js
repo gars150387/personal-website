@@ -18,34 +18,18 @@ export const CertificationShow = () => {
         <>
             <Col className='justify-content-center'>
                 <Col>
-                    <input
+                    <input className='search-input'
                         name="value"
                         onChange={(e) => setSearchTerm(e.target.value)}
                         value={searchTerm}
                         placeholder="Search my certificate here!"
-                        style={{
-                            width: '35vw',
-                            display: '-ms-flexbox',
-                            marginLeft: '32%',
-                            marginRight:'50%',
-                            fontSize: '32px',
-                            fontFamily: 'calibri'
-                        }}
                     />
                     <div className="vr" />
                     <Link to='/resume'>
-                    <Col><Button style={{
-                            width: '35vw',
-                            display: '-ms-flexbox',
-                            marginLeft: '32%',
-                            marginRight:'50%',
-                            fontSize: '32px',
-                            fontFamily: 'calibri'
-                        }} variant="secondary" bg="secondary">Resume</Button></Col>
+                    <Col><Button className='button-certificate-link'>Resume</Button></Col>
                 </Link>
                 </Col>
             </Col>
-            <hr />
             <div className='certificate-container'>
                 {
                     CertificationsData.filter(item =>

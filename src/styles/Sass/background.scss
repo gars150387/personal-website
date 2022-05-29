@@ -1,15 +1,7 @@
-.myBackground-body {
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-}
-
-#card-body-text {
-    margin-top: 2%;
-    font-size: 30px;
-    text-decoration: underline;
-    box-shadow: -2px 3px 5px #212529;
-    color: white
+.card-title {
+    position: relative;
+    display: block;
+    top: 15vh;
 }
 
 .card:hover {
@@ -19,11 +11,36 @@
 
 .certificate-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(33vw, 1fr));
-    grid-gap: 1vw;
-    margin: 2vw;
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+    grid-gap: 10px;
 }
 
-.navbar-background{
-    background-color: #fff;
+.search-input {
+    width: 30vw;
+    margin-left: 32%;
+    margin-right: 50%;
+    font-size: 32px;
+    font-family: 'Exo', sans-serif;
+    display: block;
+    position: relative;
+    top: 18vh;
+}
+
+.button-certificate-link{
+
+        width: 5vw;
+        display: -ms-flexbox;
+        margin-left: 32%;
+        margin-right:50%;
+        font-size: 32px;
+        font-family: 'Exo', sans-serif;
+}
+
+.card-format{
+    width: 35vw;
+
+    p{
+        color: black;
+        font-family: 'Exo', sans-serif;
+    }
 }
