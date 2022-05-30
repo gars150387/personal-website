@@ -52,6 +52,9 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^9.6.1"
+    "cypress": "^9.6.1",
+    "sass": "^1.52.1",
+    "sass-loader": "^13.0.0",
+    "webpack": "^5.72.1"
   }
 }
