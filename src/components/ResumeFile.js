@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Viewer } from '@react-pdf-viewer/core'
 import { Worker } from '@react-pdf-viewer/core'
-import { Col, Button } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 import "@react-pdf-viewer/core/lib"
