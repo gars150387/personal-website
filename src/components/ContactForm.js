@@ -4,8 +4,6 @@ import Swal from 'sweetalert2';
 
 export const ContactMe = () => {
 
-    const [setDisabled] = useState(true)
-
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -19,17 +17,10 @@ export const ContactMe = () => {
 
     };        
 
-    function disableButton ({ name, subject, textarea, button }){
-        if (name.toTrim().length > 0 || subject.toTrim().length > 0 || textarea.toTrim().length > 0){
-            return setDisabled(false)
-        } else {
-            return setDisabled(true)
-        }
-    }
 
 return (
     <div className='container'>
-        <form >
+        <form onSubmit={ sendEmail }>
             <div className='="row pt-5 mx-auto'>
                 <div className='col-8 form-group mx-auto'>
                     <input type="text" className='form-control' placeholder='Name' name='name' />
@@ -44,7 +35,7 @@ return (
                     <textarea type="text" className='form-control' id='' cols='30' rows="8" placeholder='Your Message' name='message' />
                 </div>
                 <div className='col-8 pt-3 mx-auto mb-4' >
-                    <button disabledButton={disableButton} onClick={sendEmail} type='submit' className='btn btn-success' >Send me your message!</button>
+                    <button type='submit' className='btn btn-success' >Send me your message!</button>
                 </div>
             </div>
         </form>

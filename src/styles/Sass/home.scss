@@ -70,6 +70,7 @@
   position: absolute;
   top: 35%;
   left: 27%;
+  transition: all 0.5s;
 }
 
 .navbar-after-click {
@@ -82,6 +83,7 @@
   transition: 0.5s;
   border-bottom: #212529 1px solid;
   justify-items: center;
+  transition: all 0.3s;
 
   p {
     display: flex;
