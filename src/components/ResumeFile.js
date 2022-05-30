@@ -39,8 +39,3 @@ export const ResumeFile = () => {
         </div>
     )
 }
-
-
-//https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js video mp4 link
-
-//import PdfFile from '../pdf/GustavoRodriguezSanteliz_SoftwareDeveloper.PDF'
