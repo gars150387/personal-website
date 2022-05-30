@@ -3,14 +3,23 @@ body {
   background-color: #fff;
   background-origin: content-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Exo', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Exo', sans-serif;
 }
+
+.viewer{
+    box-sizing: border-box;
+    padding: .5rem;
+    height: 50vh;
+    width: 50vw;
+    position: absolute;
+    top: 0px;
+    left: 12%;
+    transform: translateY(0px);
+    background: linear-gradient(to bottom, #5E97DF, rgb(69, 155, 112));
+  }

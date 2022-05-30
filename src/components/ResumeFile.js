@@ -8,9 +8,8 @@ import "@react-pdf-viewer/core/lib"
 import '@react-pdf-viewer/default-layout'
 
 import '@react-pdf-viewer/core/lib/styles/index.css';
-import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
-import '../styles/resume.css'
+import '../styles/Sass/resume.scss'
 
 import { ScrollUp } from '../hooks/useScrollUp'
 import PdfFile from '../pdf/GustavoRodriguezSanteliz_SoftwareDeveloper.PDF'
@@ -22,19 +21,22 @@ export const ResumeFile = () => {
 
     return (
         <div className="pdf-container">
-            <Col md={{ span: 8, offset: 2 }} className='text-center mt-4'>
+            <div className='navbar-after-click' ><p>G.A.R.S</p></div>
+
+            <div>
                 <Link to="/mybackground">
-                    <Button variant='secondary' style={{
-                        width: '50vw',
-                    }}>Get me out!</Button>
+                    <Button className='button-return'>Get me out!</Button>
                 </Link>
-            </Col>
+            </div>
             <ScrollUp />
             {defaultPdfFile &&
                 <>
-                    <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
-                        <Viewer className="viewer" fileUrl={defaultPdfFile} />
-                    </Worker>
+                    <div className='worker'>
+                        <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
+                            <Viewer className="viewer" fileUrl={defaultPdfFile} />
+                        </Worker>
+
+                    </div>
                 </>}
         </div>
     )

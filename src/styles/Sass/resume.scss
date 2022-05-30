@@ -1,0 +1,25 @@
+.worker{
+    width: 80vw;
+    height: 90vh;
+    border: #5E97DF solid 1px;
+    transform: translate(12%, 20%);
+    padding-top: 2%;
+}
+
+.button-return{
+    width: 50vw;
+    border: none;
+    background-color: #5f6264;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all .5s;
+
+    &:hover{
+        background-color: #ffff;
+        color: #5E97DF;
+        border-bottom: #000 solid 1px;
+        transition: all 0.5s;
+    }
+}
