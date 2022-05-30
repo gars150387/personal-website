@@ -10,13 +10,18 @@ export const Home = () => {
   const [showNavbar, setShowNavbar] = useState(false)
   const [showLetters, setShowLetters] = useState(true)
 
+  const handleEffect = () =>{
+    setShowNavbar(!showNavbar);
+    setShowLetters(false)
+  }
+
   return (
     <div className='body-container'>
 
       {showNavbar === false ? '' : (<div className='overlay'><NavbarHeader /></div>)}
 
       <div>
-        <div className='home-box' onClick={() => (setShowNavbar(!showNavbar),setShowLetters(false))}>
+        <div className='home-box' onClick={handleEffect}>
           <Link to='/whoami'>
             {showLetters === true ? (<span id='container-render' className='animate__animated animate__pulse animate__infinite animate__slower'>G.A.R.S</span>) :
               <div className='navbar-after-click' ><p>G.A.R.S</p></div>}
