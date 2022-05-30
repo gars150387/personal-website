@@ -4,7 +4,7 @@ import Swal from 'sweetalert2';
 
 export const ContactMe = () => {
 
-    const [disabled, setDisabled] = useState(true)
+    const [setDisabled] = useState(true)
 
     const sendEmail = (e) => {
         e.preventDefault();

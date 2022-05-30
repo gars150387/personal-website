@@ -1,6 +1,6 @@
 import React from "react";
 import { ContactMe } from "../components/ContactForm";
-import { Container, Row, Col, Card, Button, Stack } from "react-bootstrap";
+import { Col, Button } from "react-bootstrap";
 import { NavbarHeader } from "../components/Navbar";
 
 import '../styles/Sass/contact.scss'
@@ -32,9 +32,3 @@ export const Contact = () => {
         </>
     )
 }
-
-/*
-                
-
-                
-*/

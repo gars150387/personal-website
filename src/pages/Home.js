@@ -16,16 +16,15 @@ export const Home = () => {
       {showNavbar === false ? '' : (<div className='overlay'><NavbarHeader /></div>)}
 
       <div>
-        <div className='home-box' onClick={() => (setShowNavbar(!showNavbar),
-          setShowLetters(false))}>
-            <Link to='/whoami'>
-                        {showLetters === true ? (<span id='container-render' className='animate__animated animate__pulse animate__infinite animate__slower'>G.A.R.S</span>) : 
-                        <div className='navbar-after-click' ><p>G.A.R.S</p></div> }
-            </Link>
+        <div className='home-box' onClick={() => (setShowNavbar(!showNavbar),setShowLetters(false))}>
+          <Link to='/whoami'>
+            {showLetters === true ? (<span id='container-render' className='animate__animated animate__pulse animate__infinite animate__slower'>G.A.R.S</span>) :
+              <div className='navbar-after-click' ><p>G.A.R.S</p></div>}
+          </Link>
+
+        </div>
 
       </div>
-
-    </div>
 
     </div >
   )
