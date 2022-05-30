@@ -11,7 +11,7 @@ export const Home = () => {
   const [showLetters, setShowLetters] = useState(true)
 
   const handleEffect = () =>{
-    setShowNavbar(!showNavbar);
+    setShowNavbar(!showNavbar)
     setShowLetters(false)
   }
 
