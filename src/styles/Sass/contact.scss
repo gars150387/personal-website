@@ -70,19 +70,18 @@
     
     .other-link h1 {
         color: #212529;
-        font-size: 50px;
+        font-size: 20px;
         font-family: 'Exo', sans-serif;
         display: block;
-        position: absolute;
-        top: 70%;
-        left: 33%;
+        margin: 5% auto;
+        transform: translate(-15%,100%);
         border-bottom: #212529 solid 2px;
     }
     
     .other-link-button{
         font-size: 35px;
         font-family: "Exo", sans-serif;
-        width: 25vw;
+        width: 20vw;
         display: inline-flex;
         position: absolute;
         top: 80%;
@@ -94,7 +93,8 @@
     #button-socialMedia {
         width: 100% - 12%;
         margin: 0px 7px;
-        left: 12%;
+        transform: translate(-20%, 0%);
+        // left: 12%;
         text-align: center;
         &:hover{
             background: linear-gradient(to bottom, #5E97DF, rgb(69, 155, 112));
