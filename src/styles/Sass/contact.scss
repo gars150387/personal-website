@@ -25,7 +25,7 @@
     border-bottom: #212529 solid 2px;
 }
 
-.other-link-button{
+.other-link-button {
     font-size: 35px;
     font-family: "Exo", sans-serif;
     width: 25vw;
@@ -37,11 +37,12 @@
     transition: all 0.4s;
 
 }
+
 #button-socialMedia {
     width: 15vw;
     margin: 0px 7px;
 
-    &:hover{
+    &:hover {
         background: linear-gradient(to bottom, #5E97DF, rgb(69, 155, 112));
         transform: scale(1.1);
         transition: all 0.4s;
@@ -49,7 +50,7 @@
 
 }
 
-  @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .box-message-title {
         width: 100% - 30%;
         font-family: "Exo", sans-serif;
@@ -60,7 +61,7 @@
         left: 20%;
         margin: 2px auto;
     }
-    
+
     .box-message {
         width: 100% - 12%;
         position: absolute;
@@ -68,7 +69,13 @@
         left: 12%;
         margin-bottom: 10%;
     }
-    
+
+    .other-way-of-contact-box {
+        position: absolute;
+        top: -12%;
+        width: 100% - 12%;
+    }
+
     .other-link h1 {
         color: #212529;
         font-size: 18px;
@@ -77,40 +84,28 @@
         top: 90vh;
         border-bottom: #212529 solid 2px;
     }
-    
-    .other-link-button{
+
+    .other-link-button {
         font-size: 35px;
         font-family: "Exo", sans-serif;
         width: fit-content;
         display: block;
         position: absolute;
-        top: 100vh;
+        top: 97vh;
         left: 50%;
-        transform: translate( 0 , -50%);
-        // justify-content: space-between;
+        transform: translate(0, -50%);
         transition: all 0.4s;
-    
-    }
-    #button-socialMedia {
-        width: 100% - 12%;
-        margin: 0px 7px;
-        transform: translate(-20%, 80%);
-        // left: 12%;
-        text-align: center;
-        margin-bottom: 5%;
-    
-        &:hover{
-            background: linear-gradient(to bottom, #5E97DF, rgb(69, 155, 112));
-            transform: scale(1.1);
-            transition: all 0.4s;
-        }
-    
     }
 
-    .other-way-of-contact-box{
-        position: absolute;
-        top: -12%;
+    #button-socialMedia {
+        height: max-content;
         width: 100% - 12%;
+        margin-top: none;
+        transform: translate(-20%, 80%);
+        text-align: center;
+        margin-bottom: 5%;
+
     }
-    
-  }
+
+
+}
