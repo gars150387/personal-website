@@ -3,8 +3,7 @@
 .vertical-nav{
     position: absolute;
     left: 0%;
-    // border-right: solid #212529 2px;
-    // height: 100vh
+
 }
 
 #navbarMain-option p {
@@ -35,39 +34,42 @@ hr{
 a{
     text-decoration: none;
 }
-
-
-[className*="col-"] {
-    width: 100%;
-  }
   
-  @media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-  }
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+  @media only screen and (max-width: 600px) {
+    #navbarMain-option p {
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        font-size: 0px;
+        display: block;
+        position: relative;
+        left: 0px;
+        top:10vh;
+        transition: all 0.5s;
+        text-shadow: 0px 0px 9px #ffff;
+        font-family: 'Exo', sans-serif;
+        text-decoration: none;
+        margin: 20px 0px;
+        text-align: center;
+        opacity: 1;
+
+        .icons{
+            color: #161616;
+            font-size: 25px;
+            columns: 1;
+            position: absolute;
+            left: 0px;
+            z-index: 1;
+
+            &:hover{
+               transform: rotate(360deg);
+            }
+            
+        }    
+    }
+
+    
+    hr{
+        color: #f8f9fa;
+        border-bottom: #dee2e6 1px solid;
+    }    
   }

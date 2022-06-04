@@ -34,23 +34,6 @@
     transition: 1s;
   }
 
-  // &::after {
-  //   content: "G.A.R.S";
-  //   position: absolute;
-  //   color: transparent;
-  //   background-image: repeating-linear-gradient(
-  //     135deg,
-  //     transparent 0,
-  //     transparent 2px,
-  //     #212529 2px,
-  //     #212529 4px
-  //   );
-  //   -webkit-background-clip: text;
-  //   background-clip: text;
-  //   top: 0px;
-  //   left: 0px;
-  //   transition: 1s;
-  // }
 
   &:hover:before {
     top: 10px;
@@ -101,33 +84,50 @@
   width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
+@media only screen and (max-width: 600px) {
+
+#container-render {
+  width: max-content;
+  height:max-content ;
+  background-color: #0000;
+  position: absolute;
+  top: 40%;
+  left:5%;
+  transition: all 0.5s;
 }
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+
+  .home-box span {
+    background: linear-gradient(to bottom, #5E97DF, rgb(69, 155, 112));
+    border-radius: 15px;
+    width: 1%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    color: #212529;
+    font-size: 100px;
+    letter-spacing: 8px;
+    cursor: pointer;
+    font-family: 'Exo', sans-serif;
+  
+  
+    &::before {
+      content: "G.A.R.S";
+      position: absolute;
+      color: transparent;
+      background-image: repeating-linear-gradient(45deg,
+          transparent 0,
+          transparent 2px,
+          #212529 2px,
+          #212529 4px);
+      -webkit-background-clip: text;
+      background-clip: text;
+      top: 0px;
+      left: 0;
+      z-index: -1;
+      transition: 1s;
+    }
+ 
+  }
 }
