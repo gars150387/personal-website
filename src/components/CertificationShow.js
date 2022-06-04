@@ -25,7 +25,7 @@ export const CertificationShow = () => {
                     />
                     
                     <Link to='/resume'>
-                    <div className='button-container-resume' ><Button className='button-certificate-link'>Resume</Button></div>
+                    <div className='button-container-resume' ><Button className='button-certificate-link'><p>Resume</p></Button></div>
                 </Link>
                 </div>
             </div>
