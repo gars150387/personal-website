@@ -66,34 +66,35 @@
         position: absolute;
         top: 20%;
         left: 12%;
+        margin-bottom: 10%;
     }
     
     .other-link h1 {
         color: #212529;
-        font-size: 20px;
+        font-size: 18px;
         font-family: 'Exo', sans-serif;
-        display: block;
-        margin: 5% auto;
-        transform: translate(-15%,100%);
+        position: absolute;
+        top: 90vh;
         border-bottom: #212529 solid 2px;
     }
     
     .other-link-button{
         font-size: 35px;
         font-family: "Exo", sans-serif;
-        width: 20vw;
-        display: inline-flex;
+        width: fit-content;
+        display: block;
         position: absolute;
-        top: 80%;
-        left: 35%;
-        justify-content: space-between;
+        top: 100vh;
+        left: 50%;
+        transform: translate( 0 , -50%);
+        // justify-content: space-between;
         transition: all 0.4s;
     
     }
     #button-socialMedia {
         width: 100% - 12%;
         margin: 0px 7px;
-        transform: translate(-20%, 0%);
+        transform: translate(-20%, 80%);
         // left: 12%;
         text-align: center;
         &:hover{
@@ -102,6 +103,12 @@
             transition: all 0.4s;
         }
     
+    }
+
+    .other-way-of-contact-box{
+        position: absolute;
+        top: -12%;
+        width: 100% - 12%;
     }
     
   }
