@@ -29,7 +29,7 @@ export const WhoAmI = () => {
             </Stack>
             <div className='box'>
                     <textarea />
-                    <textarea />
+                    {/* <textarea /> */}
                 </div>
         </div>
 
