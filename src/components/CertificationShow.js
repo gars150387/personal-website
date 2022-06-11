@@ -32,7 +32,7 @@ export const CertificationShow = () => {
             <div className='certificate-container'>
                 {
                     CertificationsData.filter(item =>
-                        item.title.toLowerCase().includes(searchTerm))
+                        item.title.toLowerCase().includes(searchTerm.toLowerCase()))
                         .map(item => {
                             return (
                                 <CertificateFormat key={item.id} title={item.title} company={item.company} href={item.href} img={item.img} />
