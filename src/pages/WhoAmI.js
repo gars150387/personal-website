@@ -17,10 +17,10 @@ export const WhoAmI = () => {
             <Stack className="justify-content-center" direction='horizontal' gap={2}>
                 <div className="col-md-8">
                     <div className="card-body">
-                        <h5 className="card-title"><h1>Here who I am!</h1></h5>
+                        <h5 className="card-title"><h1>Here is who I am!</h1></h5>
                         <p className="card-text">Hi everyone, my name is Gustavo and I am a Software Developer, My background is based in Marketing and Management.</p>
                         <p className="card-text">I started building my skillset as a software developer deciding to attempt a coding Bootcamp to get my programming basic fundamentals.</p>
-                        <p className="card-text">I always look for new challenges to help me to grow as a person as professional</p>
+                        <p className="card-text">I'm always looking for new challenges to help me to grow as a person as professional</p>
                         <h5 className="card-title">This is how I enjoy my time</h5>
                         <p className="card-text">I consider myself an outdoor person, I like to go out and enjoy the nature around me. I like to spend time skateboarding on the street or at the pump track.</p>
                         <p className="card-text">Also, I like to do skimboarding and enjoy the time on the beach and try to keep up a balanced way of life.</p>
