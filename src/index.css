@@ -23,5 +23,7 @@ code {
     transform: translateY(0px);
     background: linear-gradient(to bottom, #5E97DF, rgb(69, 155, 112));
   }
-  
 
+  a{
+    text-decoration: none;
+  }
