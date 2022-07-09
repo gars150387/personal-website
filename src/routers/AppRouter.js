@@ -10,6 +10,7 @@ import { MyBackground } from '../pages/MyBackground';
 import { Contact } from '../pages/Contact';
 import { Resume } from '../pages/Resume';
 import { Home } from '../pages/Home';
+import { Projects } from '../pages/Projects';
 
 
 export const AppRouter = () => {
@@ -21,6 +22,7 @@ export const AppRouter = () => {
                 <Route exact path="/mybackground" element={<MyBackground />} />
                 <Route exact path='/resume' element={<Resume />} />
                 <Route exact path="/contact" element={<Contact />} />
+                <Route exact path="/project" element={<Projects />} />
             </Routes>
         </BrowserRouter>
     )
