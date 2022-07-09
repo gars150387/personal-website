@@ -23,7 +23,7 @@ export const NavbarHeader = () => {
                     <Link to="/contact">
                         <Nav.Link id='navbarMain-option' href='/contact' ><p>Contact <GrContact className='icons'  /></p></Nav.Link>
                     </Link>
-                    <Link to="/contact">
+                    <Link to="/project">
                         <Nav.Link id='navbarMain-option' href='/project' ><p>Projects <FaNetworkWired className='icons'  /></p></Nav.Link>
                     </Link>
                 </Container>
