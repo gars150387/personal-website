@@ -62,10 +62,11 @@
   height: 10%;
   position: absolute;
   top: 0%;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: 0.5s;
   border-bottom: #212529 1px solid;
-  justify-items: center;
   transition: all 0.3s;
 
   p {

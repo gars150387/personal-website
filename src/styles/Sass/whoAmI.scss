@@ -2,77 +2,27 @@
 @import '../Sass/main-features/button-home.scss';
 @import '../Sass/main-features/font-family.scss';
 
-
-
 .whoami-body {
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-    text-align: justify;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
-.card {
-    background-color: transparent;
-    border: none;
-    text-align: left;
-    margin-top: 2%;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-
+.row-who{
+    width: 100%;
 }
 
-#card-body>div {
-    margin-top: 0%;
-    padding-top: 0%;
+.card-who{
+    width: calc(100% - 15%);
+    margin-top: 5%;
 }
-
-img img {
-    padding-left: 2%;
-    border-radius: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    object-position: center;
-}
-
-.left-img {
-    object-position: center;
-}
-
-#imgWhoAmI-Left {
-    width: 20vw;
-    height: 38vh;
-    margin: 0px 5px;
-    display: inline-block;
-    right: 0%;
-    object-position: center;
-    object-fit: contain;
-    border-radius: 50px;
-}
-
-#imgWhoAmI-Right {
-    width: 27vw;
-    height: 45vh;
-    margin: 0px 5px;
-    object-position: center;
-    object-fit: contain;
-    border-radius: 50px;
-    object-position: center;
-
-
-}
-
 .card-body {
-    text-align: justify;
-    position: relative;
-    display: block;
-    top: 10vh;
-
-    p {
-        font-size: 25px;
-        font-family: 'Exo', sans-serif;
-        text-shadow: 2px 2px 30px #ced4da;
-        color: #212529;
-    }
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 3% 0;
 }
 
 .card-body h5 {
@@ -81,66 +31,58 @@ img img {
     text-decoration: underline;
     color: #212529;
     text-align: center;
-    display: block;
-    position: relative;
-    top: 20%;
 }
 
-.video {
-    display: inline-block;
-    left: 10%;
-    bottom: 10%;
+.card-body p{
+        font-size: 25px;
+        font-family: 'Exo', sans-serif;
+        text-shadow: 2px 2px 30px #ced4da;
+        color: #212529;
+        text-align: justify;
 }
 
 .box {
-    position: relative;
-    width: 500px;
-    height: 500px;
-    margin: 70px auto;
-    margin-bottom: 50px;
-
-    textarea {
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        width: 100%;
-        max-width: 100%;
-        height: 100%;
-        margin: 5% auto;
-        background: no-repeat center/500px url('../../images/sanFranciscoTrip.jpg');
-        object-position: center;
-        background-size: cover;
-        resize: none;
-        border-radius: 15px;
-        box-shadow: 0 0 4px 5px rgba($color: #868686, $alpha: 0.3);
-    }
+    width: 30%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% auto;
+    background: no-repeat center url('../../images/sanFranciscoTrip.jpg');
+    object-position: center;
+    background-size: cover;
+    resize: none;
+    border-radius: 15px;
+    box-shadow: 0 0 4px 5px rgba($color: #868686, $alpha: 0.3);
 }
 
 @media only screen and (max-width: 600px) {
     .whoami-body {
-        height: 100vh;
+        height: 100%;
         width: fit-content;
         text-align: justify;
     }
 
-    .card {
-        background-color: transparent;
-        border: none;
-        text-align: justify;
-        margin-top: 2%;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-        width: 20%;
-
-    }
-
     .card-body {
         text-align: justify;
-        position: relative;
-        display: block;
-        width: 100% - 12%;
-        left: 12%;
+        width: calc(100% - 14%);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 15% 10%;
 
+        h5 {
+            font-size: 20px;
+            font-family: 'Exo', sans-serif;
+            text-decoration: underline;
+            color: #212529;
+            text-align: center;
+            display: block;
+            position: relative;
+            top: 20%;
+            margin-top: 5%;
+            margin-bottom: 1%;
+        }
 
         p {
             font-size: 15px;
@@ -150,42 +92,15 @@ img img {
         }
     }
 
-    .card-body h5 {
-        font-size: 20px;
-        font-family: 'Exo', sans-serif;
-        text-decoration: underline;
-        color: #212529;
-        text-align: center;
-        display: block;
-        position: relative;
-        top: 20%;
-        margin: 5% 0%;
-    }
-
     .box {
-        position: relative;
-        width: 100vw;
-        height: 50vh;
-
-        textarea {
-            position: absolute;
-            left: 53%;
-            transform: translate(-50%);
-            width: 90%-13%;
-            max-width: 100%;
-            height: 50%;
-            margin: 5% auto;
-            background: no-repeat center/100% url('../../images/sanFranciscoTrip.jpg');
-            background-size: 100%;
-            background-repeat: no-repeat;
-            object-position: 20% 50%;
-            object-fit: cover;
-            resize: none;
-            border-radius: 15px;
-            box-shadow: 0 0 4px 5px rgba($color: #868686, $alpha: 0.3);
-
-        }
-
+        width: 70%;
+        height: 20%;
+        object-position: bottom;
+        object-fit: cover;
+        resize: none;
+        border-radius: 15px;
+        background: center / contain no-repeat / 100% url('../../images/sanFranciscoTrip.jpg');
+        margin-bottom: 3%;
     }
 
 }
