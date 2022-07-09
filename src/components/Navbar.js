@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Nav } from 'react-bootstrap'
-import { FaQuestionCircle, FaGithub } from 'react-icons/fa'
+import { FaQuestionCircle, FaGithub, FaNetworkWired } from 'react-icons/fa'
 import {GrCertificate, GrContact} from 'react-icons/gr'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -22,6 +22,9 @@ export const NavbarHeader = () => {
                     <Nav.Link id='navbarMain-option' target="_blank" rel="noopener noreferrer" href='https://www.github.com/gars150387'><p>My GitHub <FaGithub className='icons'  /></p></Nav.Link>
                     <Link to="/contact">
                         <Nav.Link id='navbarMain-option' href='/contact' ><p>Contact <GrContact className='icons'  /></p></Nav.Link>
+                    </Link>
+                    <Link to="/contact">
+                        <Nav.Link id='navbarMain-option' href='/project' ><p>Projects <FaNetworkWired className='icons'  /></p></Nav.Link>
                     </Link>
                 </Container>
             </Nav>
