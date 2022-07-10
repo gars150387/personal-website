@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "react-bootstrap";
 import { CertificationsData } from "./CertificationsData";
 import { CertificateFormat } from "./CertificateFormat";
 import "bootstrap/dist/css/bootstrap.min.css";
