@@ -10,7 +10,12 @@ export const CertificateFormat = (props) => {
             {props.title}
         </Card.Title>
         <Card.Img className='certificate-img' src={require(`../images/${props.img}`)} alt={`${props.img}`} />
-        <Button className='checkout-button' variant="success" target="_blank" rel="noopener noreferrer" href={props.href} >Check out</Button>
+        <Button 
+        className='checkout-button' 
+        variant="success" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        href={props.href} >Check out</Button>
     </Card>
   )
 }
