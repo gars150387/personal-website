@@ -51,6 +51,8 @@ export const Projects = () => {
                   <br />
                   Finally, Cypress.io was used to test every component and
                   funciton in th website.
+                  <br />
+                  Netlify to deploy the repository and bring it live.
                 </p>
               </Col>
             </div>
@@ -73,8 +75,8 @@ export const Projects = () => {
                   Pallet305 is a woodcraft designing and building website built
                   based on React.js, where it was implemented Hooks,
                   react-route-dom to navegate between components and Link to
-                  connect to another websites like Instagram, also IReact
-                  Bootstrap was used to create layouts suchas grips and stacks
+                  connect to another websites like Instagram, also React
+                  Bootstrap was used to create layouts such as grips and stacks
                   and implemented components such as Carousel, Navbar, Card and
                   more and fontawesome for icons. Also, animate.css for
                   animations. <br />
@@ -86,6 +88,8 @@ export const Projects = () => {
                   <br />
                   Finally, Cypress.io was used to test every component and
                   funciton in th website.
+                  <br />
+                  Netlify to deploy the repository and bring it live.
                 </p>
               </Col>
             </div>
@@ -105,21 +109,22 @@ export const Projects = () => {
               <h3>Description</h3>
               <Col className="slider-description-container">
                 <p>
-                  My personal website was built with React.js, where it was
-                  implemented Hooks, react-route-dom like Browser, Routes, Route
-                  and Link, also I used React-Bootstrap to create layouts and
-                  components such as Navbar, Card, Button, etc and React-icons
-                  for icons showed in website. Also, animate.css for animations.{" "}
-                  <br />
-                  For a better UX, I used SweetAlert2, to trigger customized
-                  modals. I installed emailjs to offer a communication channel
-                  between user and owener. <br />
-                  To render PDF file, I used react-pdf-viewer. <br />
-                  Sass was used to set up to style every component for regular
+                  andresdavidecowaxtesting is a e-commerce website built based
+                  on React.js, where it was implemented Hooks, react-route-dom
+                  to navegate between components, also React Bootstrap was used
+                  to create layouts such as grips, Col and Row and implemented
+                  components such as Navbar, Card and more and also, React-slick
+                  was used to create sliders and set up setting to make it
+                  responsive and fontawesome for icons. <br />
+                  SweetAlert2, to pop up modals and Emailjs to create a conexion
+                  between users and owener of the website. <br />
+                  Css was used to set up to style every component for regular
                   and large screens as smallers screens.
                   <br />
                   Finally, Cypress.io was used to test every component and
                   funciton in th website.
+                  <br />
+                  Netlify to deploy the repository and bring it live.
                 </p>
               </Col>
             </div>
