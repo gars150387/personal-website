@@ -116,6 +116,7 @@ export const Projects = () => {
                   components such as Navbar, Card and more and also, React-slick
                   was used to create sliders and set up setting to make it
                   responsive and fontawesome for icons. <br />
+                  Also, it was used React-Player to render videos.<br />
                   SweetAlert2, to pop up modals and Emailjs to create a conexion
                   between users and owener of the website. <br />
                   Css was used to set up to style every component for regular
