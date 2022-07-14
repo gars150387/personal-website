@@ -52,7 +52,8 @@ export const Projects = () => {
                   Finally, Cypress.io was used to test every component and
                   funciton in th website.
                   <br />
-                  Netlify to deploy the repository and bring it live.
+                  Netlify to deploy and hosting repository.
+
                 </p>
               </Col>
             </div>
@@ -89,7 +90,7 @@ export const Projects = () => {
                   Finally, Cypress.io was used to test every component and
                   funciton in th website.
                   <br />
-                  Netlify to deploy the repository and bring it live.
+                  Netlify to deploy and hosting repository.
                 </p>
               </Col>
             </div>
@@ -125,7 +126,7 @@ export const Projects = () => {
                   Finally, Cypress.io was used to test every component and
                   funciton in th website.
                   <br />
-                  Netlify to deploy the repository and bring it live.
+                  Netlify to deploy and hosting repository.
                 </p>
               </Col>
             </div>
