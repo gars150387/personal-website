@@ -1,8 +1,10 @@
-// .page-rendered-container{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
+
+.certificate-container{
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  width: calc(100% - 13%);
+}
 
 
 .card-format {
@@ -63,7 +65,7 @@
 }
 
 .certificate-img {
-  width: 55%;
+  width: 60%;
   height: 50%;
 }
 
