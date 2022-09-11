@@ -42,7 +42,12 @@ export const WhoAmI = () => {
             try to keep up a balanced way of life.
           </p>
         </div>
-        <div className="box"></div>
+        <div className="box">
+          <div>
+            <textarea disabled></textarea>
+            <textarea disabled></textarea>
+          </div>
+        </div>
       </Col>
 
       </Row>
