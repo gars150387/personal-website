@@ -1,8 +1,8 @@
-@import '../Sass/main-features/mainColors.scss';
-@import '../Sass/main-features/font-family.scss';
+@import "../Sass/main-features/mainColors.scss";
+@import "../Sass/main-features/font-family.scss";
 
 .home-box span {
-  background: linear-gradient(to bottom, #5E97DF, rgb(69, 155, 112));
+  background: linear-gradient(to bottom, #5e97df, rgb(69, 155, 112));
   border-radius: 15px;
   width: 44%;
   position: absolute;
@@ -14,18 +14,19 @@
   font-size: 250px;
   letter-spacing: 8px;
   cursor: pointer;
-  font-family: 'Exo', sans-serif;
-
+  font-family: "Exo", sans-serif;
 
   &::before {
     content: "G.A.R.S";
     position: absolute;
     color: transparent;
-    background-image: repeating-linear-gradient(45deg,
-        transparent 0,
-        transparent 2px,
-        #212529 2px,
-        #212529 4px);
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent 0,
+      transparent 2px,
+      #212529 2px,
+      #212529 4px
+    );
     -webkit-background-clip: text;
     background-clip: text;
     top: 0px;
@@ -33,7 +34,6 @@
     z-index: -1;
     transition: 1s;
   }
-
 
   &:hover:before {
     top: 10px;
@@ -57,7 +57,7 @@
 }
 
 .navbar-after-click {
-  background: linear-gradient(to bottom, #5E97DF, rgb(69, 155, 112));
+  background: linear-gradient(to bottom, #5e97df, rgb(69, 155, 112));
   width: 100%;
   height: 10%;
   position: absolute;
@@ -72,12 +72,10 @@
   p {
     display: flex;
     position: absolute;
-    font-family: 'Exo', sans-serif;
+    font-family: "Exo", sans-serif;
     font-size: 50px;
     left: 50%;
     transform: translate(-50%);
-
-
   }
 }
 
@@ -85,20 +83,19 @@
   width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
-
-#container-render {
-  width: max-content;
-  height:max-content ;
-  background-color: #0000;
-  position: absolute;
-  top: 40%;
-  left:5%;
-  transition: all 0.5s;
-}
+@media only screen and (max-width: 360px) {
+  #container-render {
+    width: max-content;
+    height: max-content;
+    background-color: #0000;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    transition: all 0.5s;
+  }
 
   .home-box span {
-    background: linear-gradient(to bottom, #5E97DF, rgb(69, 155, 112));
+    background: linear-gradient(to bottom, #5e97df, rgb(69, 155, 112));
     border-radius: 15px;
     width: 1%;
     position: absolute;
@@ -110,18 +107,19 @@
     font-size: 100px;
     letter-spacing: 8px;
     cursor: pointer;
-    font-family: 'Exo', sans-serif;
-  
-  
+    font-family: "Exo", sans-serif;
+
     &::before {
       content: "G.A.R.S";
       position: absolute;
       color: transparent;
-      background-image: repeating-linear-gradient(45deg,
-          transparent 0,
-          transparent 2px,
-          #212529 2px,
-          #212529 4px);
+      background-image: repeating-linear-gradient(
+        45deg,
+        transparent 0,
+        transparent 2px,
+        #212529 2px,
+        #212529 4px
+      );
       -webkit-background-clip: text;
       background-clip: text;
       top: 0px;
@@ -129,6 +127,5 @@
       z-index: -1;
       transition: 1s;
     }
- 
   }
 }

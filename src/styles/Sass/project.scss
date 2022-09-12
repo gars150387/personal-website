@@ -80,13 +80,13 @@
   color: #212522;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 360px) {
   .project-outter-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 40%;
     position: absolute;
     top: 15%;
     // background-color: #212522;
@@ -163,7 +163,7 @@
     }
   }
 
-  .slick-arrow{
+  .slick-arrow {
     position: absolute;
     top: 80%;
   }

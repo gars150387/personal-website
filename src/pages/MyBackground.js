@@ -37,7 +37,7 @@ export const MyBackground = (props) => {
       <Link to="/resume">
             <div className="button-container-resume">
               <Button className="button-certificate-link">
-                <p>Resume</p>
+                <p>Resume </p><i className="bi bi-file-person"></i>
               </Button>
             </div>
           </Link>
