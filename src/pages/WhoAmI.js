@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import { NavbarHeader } from "../components/Navbar";
 
@@ -7,6 +7,8 @@ import "../images/carrying-a-skateboard.jpeg";
 import "../styles/Sass/whoAmI.scss";
 
 export const WhoAmI = () => {
+  const [displayParagraphOne, setDisplayParagraphOne] = useState(false)
+  const [displayParagraphTwo, setDisplayParagraphTwo] = useState(false)
   return (
     <div classNameName="whoami-body">
       <div className="navbar-after-click">
@@ -16,9 +18,9 @@ export const WhoAmI = () => {
         <NavbarHeader id="navbar-whoami" />
       <Col className="card-who">
         <div className="card-body">
-          <h5 className="card-title">
+          <div onClick={() => setDisplayParagraphOne(!displayParagraphOne)} className="card-title">
             <h1>Here is who I am!</h1>
-          </h5>
+          </div>
           <p className="card-text">
             Hi everyone, my name is Gustavo and I am a Software Developer, My
             background is based in Marketing and Management.
@@ -31,7 +33,7 @@ export const WhoAmI = () => {
             I'm always looking for new challenges to help me to grow as a person
             as professional
           </p>
-          <h5 className="card-title">This is how I enjoy my time</h5>
+          <div onClick={() => setDisplayParagraphTwo(!displayParagraphTwo)} className="card-title"><h1>This is how I enjoy my time</h1></div>
           <p className="card-text">
             I consider myself an outdoor person, I like to go out and enjoy the
             nature around me. I like to spend time skateboarding on the street
