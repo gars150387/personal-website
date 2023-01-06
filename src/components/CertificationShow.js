@@ -27,5 +27,3 @@ export const CertificationShow = ({ searchTerm }) => {
   );
 };
 
-//<FaList /> list
-//<FaMicrosoft /> square

@@ -7,7 +7,7 @@ import { ScrollUp } from "../hooks/useScrollUp";
 import { NavbarHeader } from "../components/Navbar";
 
 import "../styles/Sass/background.scss";
-import "../styles/Sass/navbar.scss"
+import "../styles/Sass/navbar.scss";
 
 export const MyBackground = (props) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -17,7 +17,7 @@ export const MyBackground = (props) => {
         <p>G.A.R.S</p>
       </div>
       <Col className="page-rendered-container">
-        <NavbarHeader  />
+        <NavbarHeader />
 
         <Col className="search-input">
           <input
@@ -34,13 +34,6 @@ export const MyBackground = (props) => {
           key={props.id}
         />
       </Col>
-      <Link to="/resume">
-            <div className="button-container-resume">
-              <Button className="button-certificate-link">
-                <p>Resume </p><i className="bi bi-file-person"></i>
-              </Button>
-            </div>
-          </Link>
       <ScrollUp />
     </div>
   );

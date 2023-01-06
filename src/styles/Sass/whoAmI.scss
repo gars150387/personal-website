@@ -10,19 +10,39 @@
 }
 
 .row-who {
-  width: 100%;
+  height: 100%;
+  width: fit-content;
+  text-align: justify;
+  padding-top: 5vh;
+  height: 100vh;
+  margin-top: 5vh;
 }
 
 .card-who {
-  width: calc(100% - 15%);
+  width: 100%;
   margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.3s;
+}
+.body-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 95%;
+  margin: 0px auto;
 }
 .card-body {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 3% 0;
+    transition: ease-in-out 0.3s;
+    text-align: justify;
+    width: 86%;
+    display: grid;
+    align-items: center;
+    margin: 0 10%;
+    align-content: center;
+    justify-items: center;
 }
 
 .card-body h5 {
@@ -46,18 +66,6 @@
   height: 500px;
   position: relative;
   margin: 70px auto;
-  // width: 30%;
-  // height: 80%;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // margin: 3% auto;
-  // background: no-repeat center url('../../images/sanFranciscoTrip.jpg');
-  // object-position: center;
-  // background-size: cover;
-  // resize: none;
-  // border-radius: 15px;
-  // box-shadow: 0 0 4px 5px rgba($color: #868686, $alpha: 0.3);
 }
 .box textarea {
   position: absolute;
@@ -86,6 +94,7 @@
   opacity: 1;
   resize: horizontal;
   border-right: 2px solid #000;
+  height: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -93,15 +102,27 @@
     height: 100%;
     width: fit-content;
     text-align: justify;
+    padding-top: 5vh;
+    height: 100vh;
+    margin-top: 5vh;
   }
 
-  .card-body {
-    text-align: justify;
-    width: calc(100% - 14%);
+  .body-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    margin: 0px auto;
+  }
+  .card-body {
+    transition: ease-in-out 0.3s;
+    text-align: justify;
+    width: 86%;
+    display: grid;
     align-items: center;
-    margin: 15% 10%;
+    margin: 0 10%;
+    align-content: center;
+    justify-items: center;
 
     h5 {
       font-size: 20px;
@@ -126,13 +147,20 @@
 
   .box {
     width: 70%;
-    height: 20%;
+    height: 60%;
     object-position: bottom;
     object-fit: cover;
     resize: none;
     border-radius: 15px;
     background: center / contain no-repeat / 100%
       url("../../images/sanFranciscoTrip.jpg");
-    margin-bottom: 3%;
+  }
+  .box textarea:nth-child(2) {
+    filter: grayscale(1);
+    opacity: 1;
+    resize: horizontal;
+    border-right: 2px solid #000;
+    height: 100%;
+    width: 100%;
   }
 }
