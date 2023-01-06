@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Col, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Col } from "react-bootstrap";
 
 import { CertificationShow } from "../components/CertificationShow";
 import { ScrollUp } from "../hooks/useScrollUp";
