@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
-import { NavbarHeader } from "../components/Navbar";
 
 import "../images/sanFranciscoTrip.jpg";
 import "../images/carrying-a-skateboard.jpeg";
@@ -10,12 +9,8 @@ export const WhoAmI = () => {
   const [displayParagraphOne, setDisplayParagraphOne] = useState(false);
   const [displayParagraphTwo, setDisplayParagraphTwo] = useState(false);
   return (
-    <div classNameName="whoami-body">
-      <div className="navbar-after-click">
-        <p>G.A.R.S</p>
-      </div>
+    <div className="whoami-body">
       <Row className="row-who">
-        <NavbarHeader id="navbar-whoami" />
         <Col className="card-who">
           <div className="card-body">
             <div
@@ -24,27 +19,25 @@ export const WhoAmI = () => {
             >
               <h1>Here is who I am!</h1>
             </div>
-            {/* {displayParagraphOne && (
-              <> */}
-                <div className="body-container">
-                  <p className="card-text">
-                    Hi everyone, my name is Gustavo and I am a Software
-                    Developer, My background is based in Marketing and
-                    Management.
-                  </p>
-                  <p className="card-text">
-                    I started building my skillset as a software developer
-                    deciding to attempt a coding Bootcamp to get my programming
-                    basic fundamentals.
-                  </p>
-                  <p className="card-text">
-                    I'm always looking for new challenges to help me to grow as
-                    a person as professional
-                  </p>{" "}
-                  <br/>
-                </div>
-              {/* </>
-            )} */}
+            <div className="body-container">
+              <p className="card-text">
+                Hi everyone, my name is Gustavo and I am a Software Developer,
+                My background started in the areas of Marketing and Management.
+              </p>
+              <br />
+              <p className="card-text">
+                I switched my career toward tech industry due to I like to solve
+                problems or situations faced everyday for the most of the
+                people.
+              </p>
+              <br/>
+              <p className="card-text">
+                I consider myself such as team-player, reliable and indenpendent
+                member to participe in all posible life cicle of any project
+                that I'm being envolved.
+              </p>{" "}
+              <br />
+            </div>
 
             <div
               onClick={() => setDisplayParagraphTwo(!displayParagraphTwo)}
@@ -52,27 +45,23 @@ export const WhoAmI = () => {
             >
               <h1>This is how I enjoy my time</h1>
             </div>
-            {/* {displayParagraphTwo && ( */}
-              <>
-                <div className="body-container">
-                  <p className="card-text">
-                    I consider myself an outdoor person, I like to go out and
-                    enjoy the nature around me. I like to spend time
-                    skateboarding on the street or at the pump track.
-                  </p>
-                  <p className="card-text">
-                    Also, I like to do skimboarding and enjoy the time on the
-                    beach and try to keep up a balanced way of life.
-                  </p>
-                </div>
-              </>
-            {/* )} */}
+            <>
+              <div className="body-container">
+                <p className="card-text">
+                  I like to learn, that's why I'm here, software develpment path
+                  become you in an endless learner. Also, I like to do surfing,
+                  skimboarding, skateboarding and soccer, and it's a way to
+                  descompress my mind when I feel stuck.{" "}
+                </p>
+                <br/>
+                <p className="card-text">
+                  I like to go out with my family and friends.
+                </p>
+              </div>
+            </>
           </div>
           <div className="box">
-            <div>
-              <textarea disabled></textarea>
-              <textarea disabled></textarea>
-            </div>
+            <img src={require("../images/sanFranciscoTrip.png")} alt="san francisco" />
           </div>
         </Col>
       </Row>
