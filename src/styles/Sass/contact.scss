@@ -2,7 +2,7 @@
   font-family: "Exo", sans-serif;
   font-size: 100px;
 
-  h3{
+  h3 {
     padding-top: 5vh;
     text-align: center;
   }
@@ -15,17 +15,35 @@
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 426px) and (max-width: 768px) {
   .box-message-title {
     font-family: "Exo", sans-serif;
-  
-    h3{
-      padding-top: 15vh;
+
+    h3 {
+      padding-top: 5vh;
       text-align: center;
       font-size: 25px;
+    }
   }
+
+  .box-message {
+    height: 100%;
+    width: 95%;
+    display: grid;
+    margin: 0 auto;
   }
-  
+}
+@media only screen and (max-width: 425px) {
+  .box-message-title {
+    font-family: "Exo", sans-serif;
+
+    h3 {
+      padding-top: 5vh;
+      text-align: center;
+      font-size: 25px;
+    }
+  }
+
   .box-message {
     height: 100%;
     width: 95%;

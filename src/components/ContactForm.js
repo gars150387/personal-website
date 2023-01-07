@@ -19,22 +19,22 @@ export const ContactMe = () => {
 
 
 return (
-    <div className='container'>
+    <div style={({margin:" auto"})} className='container'>
         <form onSubmit={ sendEmail }>
             <div className="">
-                <div className='col-8 form-group mx-auto'>
+                <div className='form-group'>
                     <input type="text" className='form-control' placeholder='Name' name='name' />
                 </div>
-                <div className='col-8 form-group pt-2 mx-auto'>
+                <div className='form-group pt-2'>
                     <input type="email" className='form-control' placeholder='Email Address' name='email' />
                 </div>
-                <div className='col-8 form-group pt-2 mx-auto'>
+                <div className='form-group pt-2'>
                     <input type="text" className='form-control' placeholder='Subject' name='subject' />
                 </div>
-                <div className='col-8 form-group pt-2 mx-auto'>
+                <div className='form-group pt-2'>
                     <textarea type="text" className='form-control' id='' cols='30' rows="8" placeholder='Your Message' name='message' />
                 </div>
-                <div className='col-8 pt-3 mx-auto mb-4' >
+                <div className='pt-3 mb-4' >
                     <button type='submit' className='btn btn-success' >Send me your message!</button>
                 </div>
             </div>
