@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Col, Row } from "react-bootstrap";
 
 import { CertificationShow } from "../components/CertificationShow";
 
@@ -9,32 +8,26 @@ export const MyBackground = (props) => {
   const [searchTerm, setSearchTerm] = useState("");
   return (
     <>
-      <Row>
+      <div>
         {" "}
-        <Col className="search-input">
+        <div className="search-input">
           <input
             name="value"
             onChange={(e) => setSearchTerm(e.target.value)}
             value={searchTerm}
             placeholder="Search my certificate here!"
           />
-        </Col>
-      </Row>{" "}
-      <Row>
-        <div style={{
-          height:"50vh",
-          width:"50vw",
-          margin:"0 auto",
-          display:"grid",
-          overflow:"scroll"
-        }}>
+        </div>
+      </div>{" "}
+      {/* <div> */}
+        <div className="container-certification-show">
           <CertificationShow
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}
             key={props.id}
           />
         </div>{" "}
-      </Row>
+      {/* </div> */}
     </>
   );
 };

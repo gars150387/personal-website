@@ -41,7 +41,6 @@
 
   }
 }
-
 .card-format-title {
   text-align: center;
   font-size: 35px;
@@ -64,7 +63,18 @@
   width: 60%;
   height: 50%;
 }
+.card-format{
+  width: 40vw;
+}
 
+.container-certification-show{
+  width: 70vw;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  height: 80vh;
+}
 @media only screen and (max-width: 768px) {
   .certificate-container {
     width: 85%;
@@ -140,5 +150,19 @@
     width: 80%;
     height: 50%;
   }
+  .card-format{
+    width: 90vw;
+  }
+  
+  .container-certification-show{
+    width: 90vw;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 50vh;
+
+  }
+  
 
 }

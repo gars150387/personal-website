@@ -4,9 +4,7 @@ import "../styles/Sass/background.scss";
 
 export const CertificateFormat = (props) => {
   return (
-    <div style={{
-        width:"50vw"
-      }} key={props.id}>
+    <div className="card-format" key={props.id}>
       <div>{props.title}</div>
       <img
         style={{

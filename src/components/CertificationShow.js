@@ -1,8 +1,6 @@
 import React from "react";
 import { CertificationsData } from "./CertificationsData";
 import { CertificateFormat } from "./CertificateFormat";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Col } from "react-bootstrap";
 
 export const CertificationShow = ({ searchTerm }) => {
   return (
@@ -11,7 +9,7 @@ export const CertificationShow = ({ searchTerm }) => {
           item.title.toLowerCase().includes(searchTerm.toLowerCase())
         ).map((item) => {
           return (
-            <Col>
+            <div style={{margin:"0 auto"}}>
               <CertificateFormat
                 key={item.id}
                 title={item.title}
@@ -19,7 +17,7 @@ export const CertificationShow = ({ searchTerm }) => {
                 href={item.href}
                 img={item.img}
               />
-            </Col>
+            </div>
           );
         })}
     </>
