@@ -40,6 +40,13 @@ export const SocialIcons = () => {
           alt="whatsapp"
         />
       </a>
+      <a href="https://github.com/gars150387" target="_blank" rel="noopener noreferrer">
+        <img
+          style={{ width: "50px" }}
+          src={require("../icon/github.png")}
+          alt="github"
+        />
+      </a>
     </div>
   );
 };
