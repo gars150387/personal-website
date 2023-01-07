@@ -1,21 +1,30 @@
-import React from 'react'
-import { Card, Button } from 'react-bootstrap'
+import React from "react";
 
-import '../styles/Sass/background.scss'
+import "../styles/Sass/background.scss";
 
 export const CertificateFormat = (props) => {
   return (
-    <Card className='card-format' key={props.id} >
-        <Card.Title className='card-format-title'>
-            {props.title}
-        </Card.Title>
-        <Card.Img className='certificate-img' src={require(`../images/${props.img}`)} alt={`${props.img}`} />
-        <Button 
-        className='checkout-button' 
-        variant="success" 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        href={props.href} >Check out</Button>
-    </Card>
-  )
-}
+    <div style={{
+        width:"50vw"
+      }} key={props.id}>
+      <div>{props.title}</div>
+      <img
+        style={{
+          width:"100%",
+          objectFit:"cover",
+          
+        }}
+        src={require(`../images/${props.img}`)}
+        alt={`${props.img}`}
+      />
+      <button
+        className="checkout-button btn btn-success"
+        target="_blank"
+        rel="noopener noreferrer"
+        href={props.href}
+      >
+        Check out
+      </button>
+    </div>
+  );
+};

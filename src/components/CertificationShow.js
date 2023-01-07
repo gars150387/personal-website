@@ -2,16 +2,16 @@ import React from "react";
 import { CertificationsData } from "./CertificationsData";
 import { CertificateFormat } from "./CertificateFormat";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Col } from "react-bootstrap";
 
 export const CertificationShow = ({ searchTerm }) => {
   return (
     <>
-      <div className="justify-content-center">
-        <div className="certificate-container">
-          {CertificationsData.filter((item) =>
-            item.title.toLowerCase().includes(searchTerm.toLowerCase())
-          ).map((item) => {
-            return (
+        {CertificationsData.filter((item) =>
+          item.title.toLowerCase().includes(searchTerm.toLowerCase())
+        ).map((item) => {
+          return (
+            <Col>
               <CertificateFormat
                 key={item.id}
                 title={item.title}
@@ -19,11 +19,9 @@ export const CertificationShow = ({ searchTerm }) => {
                 href={item.href}
                 img={item.img}
               />
-            );
-          })}
-        </div>
-      </div>
+            </Col>
+          );
+        })}
     </>
   );
 };
-
