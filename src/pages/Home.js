@@ -9,7 +9,6 @@ export const Home = () => {
 
   const handleEffect = () => {
     setShowNavbar(!showNavbar);
-    setShowLetters(false);
   };
 
   return (
