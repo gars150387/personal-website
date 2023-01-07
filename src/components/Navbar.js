@@ -7,21 +7,23 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/Sass/navbar.scss";
 
 export const NavbarHeader = () => {
-  const [display, setDisplay] = useState(true)
-  window.onscroll = function() {
+  const [display, setDisplay] = useState(true);
+  window.onscroll = function () {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    console.log('Scroll position: ' + scrollTop + 'px');
-      if(scrollTop > 0){
-          return setDisplay(false)
-        } else {
-          return setDisplay(true)
-        }
+    console.log("Scroll position: " + scrollTop + "px");
+    if (scrollTop > 0) {
+      return setDisplay(false);
+    } else {
+      return setDisplay(true);
+    }
   };
 
   return (
     <>
       <nav
-        className={`navbar bg-body-none fixed-top d-${display === false ? "none" : "visible"}`}
+        className={`navbar bg-body-none fixed-top d-${
+          display === false ? "none" : "visible"
+        }`}
       >
         <div className="container-fluid">
           <div className="navbar-brand"></div>
