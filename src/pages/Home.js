@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 
 export const Home = () => {
   const [showNavbar, setShowNavbar] = useState(false);
-  const [showLetters, setShowLetters] = useState(true);
 
   const handleEffect = () => {
     setShowNavbar(!showNavbar);
