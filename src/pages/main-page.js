@@ -6,7 +6,7 @@ import { Contact } from "./Contact";
 import { MyBackground } from "./MyBackground";
 import { Projects } from "./Projects";
 import { WhoAmI } from "./WhoAmI";
-import { Experience } from './Experience'
+// import { Experience } from './Experience'
 
 export const MainPage = () => {
   return (
@@ -20,10 +20,10 @@ export const MainPage = () => {
           <WhoAmI />
         </section>
         <br />
-        <section className="container" id="experience">
+        {/* <section className="container" id="experience">
           <Experience />
         </section>
-        <br/>
+        <br/> */}
         <section className="container" id="projects">
           <Projects />
         </section>
