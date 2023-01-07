@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { FaQuestionCircle, FaGithub, FaNetworkWired } from "react-icons/fa";
 import { GrCertificate, GrContact } from "react-icons/gr";
@@ -7,10 +7,21 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/Sass/navbar.scss";
 
 export const NavbarHeader = () => {
+  const [display, setDisplay] = useState(true)
+  window.onscroll = function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    console.log('Scroll position: ' + scrollTop + 'px');
+      if(scrollTop > 0){
+          return setDisplay(false)
+        } else {
+          return setDisplay(true)
+        }
+  };
+
   return (
     <>
       <nav
-        className="navbar bg-body-none fixed-top"
+        className={`navbar bg-body-none fixed-top d-${display === false ? "none" : "visible"}`}
       >
         <div className="container-fluid">
           <div className="navbar-brand"></div>
@@ -25,7 +36,7 @@ export const NavbarHeader = () => {
           </button>
           <div
             className="offcanvas offcanvas-end"
-            tabindex="-1"
+            tabIndex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
