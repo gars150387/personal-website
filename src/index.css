@@ -1,9 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); 
+
+:root{
+  --text-sx: 10px;  
+  --text-sm: 12px;
+  --text-md: 14px;
+  --text-lg: 16px;
+  --text-xl: 20px;
+  --text-xl2: 24px;
+  --text-xl3: 30px;
+
+}
 body {
   /* height: 100vh; */
   background-color: #fff;
   background-origin: content-box;
   margin: 0;
-  font-family: 'Exo', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
