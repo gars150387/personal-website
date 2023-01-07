@@ -16,11 +16,12 @@
 }
 
 .card-format:first-child {
-  margin-top: 8%;
+  margin-top: 3%;
 }
 
 .search-input {
   width: 100%;
+  padding-top: 5%;
   margin: 1% auto;
   text-align: center;
 
@@ -37,9 +38,7 @@
     font-weight: 400;
     margin: 0% auto;
     display: flex;
-    position: absolute;
-    top: 8%;
-    left: 15%;
+
   }
 }
 
@@ -94,7 +93,7 @@
   }
 
   .card-format:first-child {
-    margin-top: 20%;
+    margin-top: 3%;
   }
 
   .search-input {
@@ -115,9 +114,7 @@
       font-weight: 400;
       margin: 0% auto;
       display: flex;
-      position: absolute;
-      top: 8%;
-      left: 15%;
+
     }
   }
 

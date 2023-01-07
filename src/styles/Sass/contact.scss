@@ -3,7 +3,7 @@
   font-size: 100px;
 
   h3{
-    padding-top: 15vh;
+    padding-top: 5vh;
     text-align: center;
   }
 }
@@ -13,46 +13,6 @@
   width: 75%;
   display: grid;
   margin: 0 auto;
-}
-
-.other-way-of-contact-box{
-  width: 60%;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-.other-link {
-  width: 100%;
-  margin: 0 auto;
-  
-  h1 {
-  color: #212529;
-  font-size: 50px;
-  font-family: "Exo", sans-serif;
-  display: grid;
-  border-bottom: #212529 solid 2px;
-}}
-
-.other-link-button {
-  font-size: 35px;
-  font-family: "Exo", sans-serif;
-  width: 75%;
-  display: inline-flex;
-  justify-content: space-between;
-  transition: all 0.4s;
-  margin: 0 auto;
-}
-
-#button-socialMedia {
-  width: 100%;
-  margin: 0px 7px;
-
-  &:hover {
-    background: linear-gradient(to bottom, #5e97df, rgb(69, 155, 112));
-    transform: scale(1.1);
-    transition: all 0.4s;
-  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -71,45 +31,5 @@
     width: 95%;
     display: grid;
     margin: 0 auto;
-  }
-  
-  .other-way-of-contact-box{
-    width: 60%;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-  }
-  .other-link {
-    width: 100%;
-    margin: 0 auto;
-    
-    h1 {
-    color: #212529;
-    font-size: 25px;
-    font-family: "Exo", sans-serif;
-    display: grid;
-    border-bottom: #212529 solid 2px;
-  }}
-  
-  .other-link-button {
-    font-size: 20px;
-    font-family: "Exo", sans-serif;
-    width: 75%;
-    display: inline-flex;
-    justify-content: space-between;
-    transition: all 0.4s;
-    margin: 0 auto;
-  }
-  
-  #button-socialMedia {
-    width: 100%;
-    margin: 0px 7px;
-  
-    &:hover {
-      background: linear-gradient(to bottom, #5e97df, rgb(69, 155, 112));
-      transform: scale(1.1);
-      transition: all 0.4s;
-    }
   }
 }

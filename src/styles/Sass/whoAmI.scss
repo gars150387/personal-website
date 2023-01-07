@@ -3,164 +3,115 @@
 @import "../Sass/main-features/font-family.scss";
 
 .whoami-body {
+  width: 100%;
+  margin: 0 auto;
+}
+.row-who {
+  width: 90%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
-}
-
-.row-who {
-  height: 100%;
-  width: fit-content;
-  text-align: justify;
-  padding-top: 5vh;
-  height: 100vh;
-  margin-top: 5vh;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .card-who {
-  width: 100%;
-  margin-top: 5%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  transition: all ease-in-out 0.3s;
-}
-.body-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 95%;
-  margin: 0px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3vw;
 }
 .card-body {
-    transition: ease-in-out 0.3s;
-    text-align: justify;
-    width: 86%;
-    display: grid;
-    align-items: center;
-    margin: 0 10%;
-    align-content: center;
-    justify-items: center;
-}
-
-.card-body h5 {
-  font-size: 35px;
-  font-family: "Exo", sans-serif;
-  text-decoration: underline;
-  color: #212529;
-  text-align: center;
-}
-
-.card-body p {
-  font-size: 25px;
-  font-family: "Exo", sans-serif;
-  text-shadow: 2px 2px 30px #ced4da;
-  color: #212529;
-  text-align: justify;
-}
-
-.box {
-  width: 500px;
-  height: 500px;
-  position: relative;
-  margin: 70px auto;
-}
-.box textarea {
-  position: absolute;
   width: 100%;
-  max-width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: no-repeat url("../../images/sanFranciscoTrip.jpg");
-  background-size: 490px 490px;
-  opacity: 0.5;
-  filter: grayscale(0);
-  resize: none;
-  border: none;
-
-  &::before {
-    content: "check my gray version";
-    position: absolute;
-    right: 50px;
-    top: 50px;
-    font-size: 50px;
-  }
+  padding-top: 75px;
+  text-align: justify;
+  height: fit-content;
 }
-.box textarea:nth-child(2) {
+.body-container p {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  line-height: 25px;
+}
+.box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box img {
+  width: 100%;
+  padding: 25px;
   filter: grayscale(1);
-  opacity: 1;
-  resize: horizontal;
-  border-right: 2px solid #000;
-  height: 100%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 426px) and (max-width: 768px) {
   .whoami-body {
-    height: 100%;
-    width: fit-content;
-    text-align: justify;
-    padding-top: 5vh;
-    height: 100vh;
-    margin-top: 5vh;
+    width: 100%;
+    margin: 0 auto;
   }
-
-  .body-container {
+  .row-who {
+    width: 100vw;
     display: flex;
     justify-content: center;
+    align-items: center;
+  }
+
+  .card-who {
+    display: flex;
     flex-direction: column;
-    width: 95%;
-    margin: 0px auto;
   }
   .card-body {
-    transition: ease-in-out 0.3s;
-    text-align: justify;
-    width: 86%;
-    display: grid;
-    align-items: center;
-    margin: 0 10%;
-    align-content: center;
-    justify-items: center;
-
-    h5 {
-      font-size: 20px;
-      font-family: "Exo", sans-serif;
-      text-decoration: underline;
-      color: #212529;
-      text-align: center;
-      display: block;
-      position: relative;
-      top: 20%;
-      margin-top: 5%;
-      margin-bottom: 1%;
-    }
-
-    p {
-      font-size: 15px;
-      font-family: "Exo", sans-serif;
-      text-shadow: 2px 2px 30px #ced4da;
-      color: #212529;
-    }
+    width: 100%;
+    padding: 75px;
+    text-align: center;
   }
 
   .box {
+    margin: 0 auto;
     width: 70%;
-    height: 60%;
     object-position: bottom;
     object-fit: cover;
-    resize: none;
     border-radius: 15px;
-    background: center / contain no-repeat / 100%
-      url("../../images/sanFranciscoTrip.jpg");
   }
-  .box textarea:nth-child(2) {
-    filter: grayscale(1);
-    opacity: 1;
-    resize: horizontal;
-    border-right: 2px solid #000;
-    height: 100%;
+  .box img {
     width: 100%;
+    filter: grayscale(1);
+  }
+}
+@media only screen and (max-width: 425px) {
+  .whoami-body {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .row-who {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-who {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-body {
+    width: 98%;
+    padding: 25px;
+    text-align: center;
+    margin: 37px auto;
+  }
+
+  .box {
+    margin: 0 auto;
+    width: 90%;
+    object-position: bottom;
+    object-fit: cover;
+
+    img {
+      width: 100%;
+      filter: grayscale(1);
+    }
   }
 }
