@@ -18,23 +18,25 @@ export const MainPage = () => {
       <Row>
         <section className="container" id="who">
           <WhoAmI />
+          <br />{" "}
         </section>
-        <br />
+
         {/* <section className="container" id="experience">
           <Experience />
         </section>
         <br/> */}
-        <section className="container" id="projects">
+        <section style={{marginTop:"8vh"}} className="container" id="projects">
           <Projects />
+          <br />{" "}
+
         </section>
-        <br/>
-        <section  className="container" id="contact">
+        <br />
+        <section className="container" id="contact">
           <Contact />
         </section>
         <section className="container" id="background">
           <MyBackground />
         </section>
-        <br/>
       </Row>
       <ScrollUp />
     </div>
