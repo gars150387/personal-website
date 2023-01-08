@@ -79,12 +79,24 @@
   .navbar-container {
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
   }
   
   .navbar-collapse-icon{
-    display: none;
+    display:inline-block;
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    transition: all ease-in-out .3s;
+    padding: 15px;
+
+    img{
+      width: 50px;
+      height: 50px;
+      padding: 15px;
+    }
   }
   .navbar {
     background: transparent;
@@ -93,21 +105,23 @@
     color: #fff;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    font-size: var(--text-md);
+    font-size: var(--text-xl2);
     color:#000;
     text-decoration: none;
   }
   .navbar-section {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     width: 100%;
   }
   .navbar-nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     width: 55%;
