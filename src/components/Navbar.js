@@ -43,7 +43,7 @@ export const NavbarHeader = () => {
               </li>
               <Link to="/resume">
                 <li className="nav-item">
-                  <a className="nav-link">Resume</a>
+                  <a className="nav-link" href="#resume">Resume</a>
                 </li>{" "}
               </Link>
             </ul>
