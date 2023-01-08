@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { SocialIcons } from "./SocialIcons";
 import "../styles/Sass/navbar.scss";
 import { Link } from "react-router-dom";
 
 export const NavbarHeader = () => {
-  const [display, setDisplay] = useState(false);
+
   return (
     <>
       <div className="navbar-container">
