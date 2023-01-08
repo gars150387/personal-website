@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 
 import "@react-pdf-viewer/core/lib";
 import "@react-pdf-viewer/default-layout";
-
 import "@react-pdf-viewer/core/lib/styles/index.css";
 
 import "../styles/Sass/resume.scss";
@@ -20,7 +19,7 @@ export const ResumeFile = () => {
   return (
     <div className="pdf-container">
       <div>
-        <Link to="/main">
+        <Link to="/">
           <Button className="button-return">Return</Button>
         </Link>
       </div>
