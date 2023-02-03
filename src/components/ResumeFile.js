@@ -11,7 +11,7 @@ import "@react-pdf-viewer/core/lib/styles/index.css";
 import "../styles/Sass/resume.scss";
 
 import { ScrollUp } from "../hooks/useScrollUp";
-import PdfFile from "../pdf/GustavoRodriguezSanteliz_SoftwareDeveloper.PDF";
+import PdfFile from "../pdf/Gustavo-Rodriguez-Software-Developer.pdf";
 
 export const ResumeFile = () => {
   const [defaultPdfFile] = useState(PdfFile);
