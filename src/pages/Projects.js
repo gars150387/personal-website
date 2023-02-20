@@ -95,6 +95,38 @@ export const Projects = () => {
           </a>
         </div>
       </div>
+      <div className="img-container">
+        <img src={require("../images/UnityWorkingWithGoogleFirebase.jpg")} alt="UnityWorkingWithGoogleFirebase" />
+        <div className="container-stack-icons">
+          <img src={require("../icon/css.png")} alt="css" />
+          <img src={require("../icon/javascript.png")} alt="javascript" />
+          <img src={require("../icon/react.png")} alt="react" />
+          <img src={require("../icon/bootstrap.png")} alt="bootstrap" />
+          <img src={require("../icon/redux.webp")} alt="redux" />
+          <img src={require("../icon/pwa.png")} alt="pwa" />
+          <img src={require("../icon/node.png")} alt="node" />
+          <img src={require("../icon/express.webp")} alt="express" />
+          <img src={require("../icon/mongodb.png")} alt="mongodb" />
+          <img src={require("../icon/http.png")} alt="http" />
+        </div>
+        <br />
+        <div className="container-button-anchor">
+          <a
+            href="https://rosa-mistica-app.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Live
+          </a>
+          <a
+            href="https://github.com/gars150387/inventory-system-frontend"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Repo
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
