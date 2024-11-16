@@ -1,8 +1,4 @@
-import {
-  motion,
-  useScroll,
-  useTransform
-} from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 const Navbar = () => {
@@ -45,24 +41,6 @@ const Navbar = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               <button
-                onClick={() => scrollToSection("home")}
-                className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-[Montserrat]"
-              >
-                Home
-              </button>
-              <button
-                onClick={() => scrollToSection("about")}
-                className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-[Montserrat]"
-              >
-                About
-              </button>
-              <button
-                onClick={() => scrollToSection("projects")}
-                className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-[Montserrat]"
-              >
-                Projects
-              </button>
-              <button
                 onClick={() => scrollToSection("contact")}
                 className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-[Montserrat]"
               >
@@ -87,24 +65,6 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <button
-              onClick={() => scrollToSection("home")}
-              className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-[Montserrat] w-full text-left"
-            >
-              Home
-            </button>
-            <button
-              onClick={() => scrollToSection("about")}
-              className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-[Montserrat] w-full text-left"
-            >
-              About
-            </button>
-            <button
-              onClick={() => scrollToSection("projects")}
-              className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-[Montserrat] w-full text-left"
-            >
-              Projects
-            </button>
             <button
               onClick={() => scrollToSection("contact")}
               className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-[Montserrat] w-full text-left"
