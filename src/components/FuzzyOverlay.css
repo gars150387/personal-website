@@ -1,0 +1,6 @@
+.rotating-text-container {
+    display: inline-block;
+    overflow: hidden;
+    height: 1em; /* Adjust to match text size */
+    vertical-align: bottom;
+  }
