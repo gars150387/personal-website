@@ -1,20 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
-  font-family: "Bebas Neue","Montserrat", sans-serif;
+  font-family:  sans-serif,serif;
   /* overflow-x: hidden; */
   /* overscroll-behavior: none; */
   scrollbar-width: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: sans-serif, serif;
 }
 p{
-  font-family: "Montserrat", sans-serif;
+  font-family: sans-serif, serif;
 }
 .parallax-container {
   overflow-x: hidden;

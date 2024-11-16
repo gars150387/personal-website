@@ -7,7 +7,6 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import FuzzyOverlayHome from "./components/FuzzyOverlay";
 import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
 function Section({ children }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });

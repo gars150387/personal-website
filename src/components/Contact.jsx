@@ -15,7 +15,7 @@ const Contact = () => {
       content: 'Your email was sent successfully',
     });
   };
-  const error = () => {
+  const errorMessage = () => {
     messageApi.open({
       type: 'error',
       content: 'Something went wrong, please try again later',
@@ -35,7 +35,7 @@ const Contact = () => {
         success();
       },
       (error) => {
-        error();
+        errorMessage();
       }
     );
     setName("");
