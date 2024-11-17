@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Mail, Phone, MapPin } from "lucide-react";
 import emailjs from '@emailjs/browser';
 import { message } from "antd";
+import AWSService from "./icons/AWSIcon";
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -45,11 +46,11 @@ const Contact = () => {
 
   return (
     <div
-      id="contact"
-      className="min-h-screen py-16 px-4 sm:px-6 lg:px-8 flex items-center bg-gray-50"
+      // id="contact"
+      className="w-full min-h-screen py-16 px-4 sm:px-6 lg:px-8 flex items-center bg-gray-50"
     >
       {contextHolder}
-      <div className="max-w-7xl mx-auto">
+      <div className="w-full max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}

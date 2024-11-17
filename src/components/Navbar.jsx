@@ -19,7 +19,7 @@ const Navbar = () => {
   const { scrollY } = useScroll();
   const opacity = useTransform(
     scrollY,
-    [0, 700, 750, 760, 770, 780, 790, 795, 799, 800],
+    [0, 600, 650, 660, 670, 680, 690, 750, 799, 800],
     [0, 0, 0, 0, 0, 0.6, 0.7, 0.8, 0.9, 1]
   );
   return (

@@ -25,9 +25,6 @@ const FuzzyOverlay = () => {
         ease: "linear",
         repeatType: "loop",
       }}
-      // You can download these PNGs here:
-      // https://www.hover.dev/black-noise.png
-      // https://www.hover.dev/noise.png
       style={{
         backgroundImage: `url(https://www.hover.dev/black-noise.png)`,
       }}
@@ -63,9 +60,9 @@ const ExampleContent = () => {
       <h1 className="text-center text-6xl font-black font-[Bebas Neue] text-white">
         Gustavo Rodriguez
       </h1>
-      <h2 className="font-[Montserrat] text-3xl text-gray-600 mb-8">Software Engineer</h2>{" "}
-      <div className="flex items-center justify-start self-baseline bg-transparent px-1">
-        <p className="flex flex-row items-center justify-center font-[Montserrat] text-3xl text-white mb-8">
+      <h2 className="w-full text-center font-[Montserrat] text-3xl text-gray-600 mb-8">Software Engineer</h2>{" "}
+      <div className="flex items-center justify-center self-baseline bg-transparent px-1">
+        <p className="w-fit flex flex-row justify-center items-center font-[Montserrat] text-3xl text-white mb-8">
           Make it&nbsp;
         </p>
 
@@ -74,11 +71,10 @@ const ExampleContent = () => {
             key={currentWord}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            // exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
             className="rounded border-white border-spacing-4 bg-transparent"
           >
-            <p className="flex flex-row items-center justify-center text-5xl capitalize px-2 py-3 rounded border-black bg-white text-black mb-8 rotating-text-container font-[Montserrat]">
+            <p className="w-full flex flex-row items-center justify-center text-center text-5xl capitalize px-2 py-3 rounded border-black bg-white text-black mb-8 rotating-text-container font-[Montserrat]">
               {rotatingWords[currentWord]}{" "}
             </p>
           </motion.span>
