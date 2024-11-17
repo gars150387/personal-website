@@ -28,6 +28,7 @@ const Navbar = () => {
         opacity,
         backgroundColor: "transparent",
         backdropFilter: "blur(10px)",
+        '-webkit-backdrop-filter': 'blur(10px)',
         backgroundImage: "linear-gradient(1deg, white, transparent)",
         S: "30px",
       }}
