@@ -24,7 +24,13 @@ const Navbar = () => {
   );
   return (
     <motion.nav
-      style={{ opacity }}
+      style={{
+        opacity,
+        backgroundColor: "transparent",
+        backdropFilter: "blur(10px)",
+        backgroundImage: "linear-gradient(1deg, white, transparent)",
+        S: "30px",
+      }}
       className="bg-white shadow-lg fixed w-full z-10"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-0 lg:px-0">
