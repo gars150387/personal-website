@@ -112,7 +112,7 @@ export const About = () => {
               </li>
             </>
           }
-          url="https://admin.devitrak.net/"
+          url="https://devitrak.com/"
           details="/details"
         />
       </TextParallaxContent>
