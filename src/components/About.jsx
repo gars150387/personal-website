@@ -217,7 +217,7 @@ export const About = () => {
       >
         <ExampleContent
           heading="GARS Solutions is a modern, feature-rich web application designed to streamline scheduling, appointment management, and payments. Built using a scalable and efficient tech stack, it offers a seamless user experience tailored for businesses and individuals who need to manage schedules, client interactions, and transactions efficiently."
-          url="https://gars.solutions"
+          url="https://garssolutions.netlify.app/"
           subheading={
             <>
               <li>
