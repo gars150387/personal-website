@@ -2,14 +2,17 @@ import React, { useRef } from "react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
 import { Divider } from "antd";
+import DevitrakScreenshot from "../assets/792_1x_shots_so.png";
+import GARS_screenshot from "../assets/323_1x_shots_so.png";
+import YennyOnTrend_screenshot from "../assets/766shots_so.png";
 export const About = () => {
   return (
-    <div className="bg-transparent py-4">
+    <div className="bg-transparent">
       <TextParallaxContent
-        imgUrl="https://res.cloudinary.com/dpdzkhh07/image/upload/v1731707237/admin_dashboard_devitrak.jpg"
+        imgUrl={DevitrakScreenshot} //"https://res.cloudinary.com/dpdzkhh07/image/upload/v1731707237/admin_dashboard_devitrak.jpg"
         subheading="Commitment to Excellence"
-        heading="Devitrak Admin Dashboard"
-        bg={"bg-red-600"}
+        heading="Devitrak App - Admin Dashboard and Consume App"
+        bg={"#273a5a"}
       >
         <ExampleContent
           heading="Devitrak is a feature-rich, responsive, and modern admin panel
@@ -117,11 +120,10 @@ export const About = () => {
         />
       </TextParallaxContent>
       <TextParallaxContent
-        imgUrl="https://res.cloudinary.com/dpdzkhh07/image/upload/v1731709614/Screenshot_2024-11-15_172610_ykb0dr.jpg"
+        imgUrl={YennyOnTrend_screenshot} //"https://res.cloudinary.com/dpdzkhh07/image/upload/v1731709614/Screenshot_2024-11-15_172610_ykb0dr.jpg"
         subheading="Quality, modern, and user-friendly"
-        heading={`Yenny on Trend
-          fashion and lifestyle platform`}
-        bg={"bg-blue-600"}
+        heading={`Yenny on Trend`}
+        bg={"#715e5e"} //#c85e5e
       >
         <ExampleContent
           heading="Yenny on Trend is a modern, high-performance e-commerce platform designed to deliver a seamless shopping experience. Built with scalability and efficiency in mind, the app combines robust backend functionality with an intuitive and visually appealing user interface to cater to both shoppers and administrators."
@@ -210,10 +212,10 @@ export const About = () => {
         />
       </TextParallaxContent>
       <TextParallaxContent
-        imgUrl="https://res.cloudinary.com/dpdzkhh07/image/upload/v1731710488/Screenshot_2024-11-15_174057_ep1vvp.jpg"
+        imgUrl={GARS_screenshot} //"https://res.cloudinary.com/dpdzkhh07/image/upload/v1731710488/Screenshot_2024-11-15_174057_ep1vvp.jpg"
         subheading="Modern"
         heading="GARS Solutions"
-        bg={"bg-green-600"}
+        bg={"#9779b6"} //#9333ea
       >
         <ExampleContent
           heading="GARS Solutions is a modern, feature-rich web application designed to streamline scheduling, appointment management, and payments. Built using a scalable and efficient tech stack, it offers a seamless user experience tailored for businesses and individuals who need to manage schedules, client interactions, and transactions efficiently."
@@ -288,7 +290,7 @@ const IMG_PADDING = 12;
 
 const TextParallaxContent = ({ imgUrl, subheading, heading, children, bg }) => {
   return (
-    <div
+    <motion.div
       style={{
         paddingLeft: IMG_PADDING,
         paddingRight: IMG_PADDING,
@@ -296,10 +298,10 @@ const TextParallaxContent = ({ imgUrl, subheading, heading, children, bg }) => {
     >
       <div className={`relative h-[125vh] rounded-xl`}>
         <StickyImage imgUrl={imgUrl} />
-        <OverlayCopy heading={heading} subheading={subheading} />
+        <OverlayCopy heading={heading} subheading={subheading} bg={bg} />
       </div>
       {children}
-    </div>
+    </motion.div>
   );
 };
 
@@ -311,7 +313,7 @@ const StickyImage = ({ imgUrl }) => {
   });
 
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.85]);
-  const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
 
   return (
     <motion.div
@@ -320,8 +322,11 @@ const StickyImage = ({ imgUrl }) => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: `calc(100vh - ${IMG_PADDING * 2}px)`,
+        maxWidth: "1280px",
         top: IMG_PADDING,
+        paddingTop: `calc(${IMG_PADDING} / 2)px`,
         scale,
+        margin: "auto",
       }}
       ref={targetRef}
       className="sticky z-0 overflow-hidden rounded-3xl"
@@ -336,7 +341,7 @@ const StickyImage = ({ imgUrl }) => {
   );
 };
 
-const OverlayCopy = ({ subheading, heading }) => {
+const OverlayCopy = ({ subheading, heading, bg }) => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -345,30 +350,34 @@ const OverlayCopy = ({ subheading, heading }) => {
 
   const y = useTransform(scrollYProgress, [0, 1], [250, -250]);
   const opacity = useTransform(scrollYProgress, [0.25, 0.5, 0.75], [0, 1, 0]);
-
+  const color = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
   return (
     <motion.div
       style={{
         y,
         opacity,
+        color: `${color > 0 ? "#fff" : bg}`,
       }}
       ref={targetRef}
-      className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center text-white"
+      className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center"
     >
-      <p className="mb-2 text-center text-xl md:mb-4 md:text-3xl">
+      <motion.p
+        style={{ color: `${color > 0 ? "#fff" : bg}` }}
+        className="mb-2 text-center text-xl md:mb-4 md:text-3xl"
+      >
         {subheading}
-      </p>
-      <p
+      </motion.p>
+      <motion.p
         style={{
-          color: "white",
-          textShadow: "0px 0px 10px #000",
+          color: `${color > 0 ? "#fff" : bg}`,
+          textShadow: `0px 0px 10px ${color > 0 ? "#000" : bg}`,
           backgroundClip: "text",
           textWrap: "balance",
         }}
         className="text-center text-4xl font-bold md:text-7xl"
       >
         {heading}
-      </p>
+      </motion.p>
     </motion.div>
   );
 };
@@ -397,7 +406,12 @@ const SlidingEffect = () => {
       >
         <h1 className="my-5 uppercase text-black stroke-2 stroke-[#f4955c]">
           {new Array(60).fill(0).map((_, i) => (
-            <span style={{color:`${i % 2===0 ? '#171717' : '#808080'}`}} key={i}>Let's work together!&nbsp;|&nbsp;</span>
+            <span
+              style={{ color: `${i % 2 === 0 ? "#171717" : "#808080"}` }}
+              key={i}
+            >
+              Let's work together!&nbsp;|&nbsp;
+            </span>
           ))}
         </h1>
       </motion.div>
@@ -410,7 +424,7 @@ const ExampleContent = (props) => {
   return (
     <div
       ref={ref}
-      className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12"
+      className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12"
     >
       <motion.h2
         style={{
