@@ -57,12 +57,14 @@ const ExampleContent = () => {
 
   return (
     <div className="relative grid h-screen place-content-center space-y-6 bg-neutral-950 p-8">
-      <h1 className="text-center text-6xl font-black font-[Bebas Neue] text-white">
+      <h1 className="text-center text-6xl font-black font-sans text-white">
         Gustavo Rodriguez
       </h1>
-      <h2 className="w-full text-center font-[Montserrat] text-3xl text-gray-600 mb-8">Software Engineer</h2>{" "}
+      <h2 className="w-full text-center font-sans text-3xl text-gray-600 mb-8">
+        Software Engineer
+      </h2>{" "}
       <div className="flex items-center justify-center self-baseline bg-transparent px-1">
-        <p className="w-fit flex flex-row justify-center items-center font-[Montserrat] text-3xl text-white mb-8">
+        <p className="w-fit flex flex-row justify-center items-center font-sans text-3xl text-white mb-8">
           Make it&nbsp;
         </p>
 
@@ -74,7 +76,7 @@ const ExampleContent = () => {
             transition={{ duration: 1 }}
             className="rounded border-white border-spacing-4 bg-transparent"
           >
-            <p className="w-full flex flex-row items-center justify-center text-center text-5xl capitalize px-2 py-3 rounded border-black bg-white text-black mb-8 rotating-text-container font-[Montserrat]">
+            <p className="w-full flex flex-row items-center justify-center text-center text-5xl capitalize px-2 py-3 rounded border-black bg-white text-black mb-8 rotating-text-container font-sans">
               {rotatingWords[currentWord]}{" "}
             </p>
           </motion.span>

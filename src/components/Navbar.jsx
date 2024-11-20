@@ -28,7 +28,7 @@ const Navbar = () => {
         opacity,
         backgroundColor: "transparent",
         backdropFilter: "blur(10px)",
-        '-webkit-backdrop-filter': 'blur(10px)',
+        "-webkit-backdrop-filter": "blur(10px)",
         backgroundImage: "linear-gradient(1deg, white, transparent)",
         S: "30px",
       }}
@@ -39,7 +39,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <button
               type="button"
-              className="m-0 p-0 outline-none border-none text-xl font-[Beba Neue] text-black"
+              className="m-0 p-0 outline-none border-none text-xl font-sans text-black"
               onClick={() => scrollToSection("home")}
             >
               GARS | Software Developer
@@ -49,7 +49,7 @@ const Navbar = () => {
             <div className="ml-10 flex items-baseline space-x-4">
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-[Montserrat]"
+                className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-sans"
               >
                 Contact
               </button>
@@ -74,7 +74,7 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <button
               onClick={() => scrollToSection("contact")}
-              className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-[Montserrat] w-full text-left"
+              className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-sans w-full text-left"
             >
               Contact
             </button>
