@@ -11,7 +11,7 @@ export const About = () => {
       <TextParallaxContent
         imgUrl={DevitrakScreenshot} //"https://res.cloudinary.com/dpdzkhh07/image/upload/v1731707237/admin_dashboard_devitrak.jpg"
         subheading="Commitment to Excellence"
-        heading="Devitrak App - Admin Dashboard and Consume App"
+        heading="Devitrak App"
         bg={"#273a5a"}
       >
         <ExampleContent
@@ -21,6 +21,7 @@ export const About = () => {
           application leverages a comprehensive tech stack to ensure high
           performance and secure operations.
 "
+          title="Devitrak App | Admin Dashboard & Consumer App"
           subheading={
             <>
               {" "}
@@ -127,6 +128,7 @@ export const About = () => {
       >
         <ExampleContent
           heading="Yenny on Trend is a modern, high-performance e-commerce platform designed to deliver a seamless shopping experience. Built with scalability and efficiency in mind, the app combines robust backend functionality with an intuitive and visually appealing user interface to cater to both shoppers and administrators."
+          title="Yenny on Trend | Fashion E-commerce Platform"
           subheading={
             <>
               {" "}
@@ -220,6 +222,7 @@ export const About = () => {
         <ExampleContent
           heading="GARS Solutions is a modern, feature-rich web application designed to streamline scheduling, appointment management, and payments. Built using a scalable and efficient tech stack, it offers a seamless user experience tailored for businesses and individuals who need to manage schedules, client interactions, and transactions efficiently."
           url="https://garssolutions.netlify.app/"
+          title="GARS Solutions | Modern Web App for Scheduling, Appointment Management, and Payments"
           subheading={
             <>
               <li>
@@ -294,6 +297,7 @@ const TextParallaxContent = ({ imgUrl, subheading, heading, children, bg }) => {
       style={{
         paddingLeft: IMG_PADDING,
         paddingRight: IMG_PADDING,
+        marginTop: IMG_PADDING,
       }}
     >
       <div className={`relative h-[125vh] rounded-xl`}>
@@ -424,7 +428,7 @@ const ExampleContent = (props) => {
   return (
     <div
       ref={ref}
-      className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12"
+      className="mx-auto grid max-w-7xl grid-cols-1 gap-8 pb-24 pt-12 md:grid-cols-12"
     >
       <motion.h2
         style={{
@@ -435,14 +439,14 @@ const ExampleContent = (props) => {
         }}
         className="col-span-1 text-3xl font-bold md:col-span-4"
       >
-        Additional content explaining the above card here
+        {props.title}{" "}
       </motion.h2>
       <div className="col-span-1 md:col-span-8">
         <h2 className="mb-4 text-xl text-neutral-600 md:text-2xl">
           {props.heading}
         </h2>
         <Divider />
-        <ul className="space-y-4 my-4 text-xl text-neutral-700 md:text-2xl">
+        <ul className="space-y-4 my-4 text-sans text-xl text-neutral-700 md:text-2xl text-sans">
           {props.subheading}
         </ul>
         <Divider />
@@ -450,7 +454,7 @@ const ExampleContent = (props) => {
           href={props.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full rounded bg-neutral-900 px-9 py-4 my-3 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit"
+          className="w-full rounded bg-neutral-900 px-9 py-4 my-3 text-xl text-sans text-white transition-colors hover:bg-neutral-700 md:w-fit"
         >
           Check it out <FiArrowUpRight className="inline" />
         </a>
